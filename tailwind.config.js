@@ -8,6 +8,8 @@ export default {
     extend: {
       colors: {
         grayHead: "#3B454E",
+        grayMenu: "#5c6975",
+        blueActive: "#346ddb"
       },
     },
   },
