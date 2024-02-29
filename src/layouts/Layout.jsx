@@ -8,12 +8,12 @@ const Layout = () => {
       <header>
         <Navbar />
       </header>
-      <div className="flex items-center">
+      <div className="flex mt-[80px]">
         <div>
           <Sidebar />
         </div>
 
-        <main>
+        <main className="w-full">
           <Outlet />
         </main>
       </div>
