@@ -2,7 +2,7 @@ import React from 'react';
 import { BiSearch } from "react-icons/bi";
 const Navbar = () => {
   return (
-    <nav className="h-[80px] px-2 bg-white flex items-center border-b-[1px] fixed top-0 left-0 right-0">
+    <nav className="navbarSide h-[80px] px-2 bg-white flex items-center border-b-[1px] fixed top-0 left-0 right-0">
       <div className='w-full flex items-center justify-between'>
         {/* logo */}
         <div className='pl-4 pr-6 flex items-center gap-4'>

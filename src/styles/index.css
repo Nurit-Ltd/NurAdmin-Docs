@@ -11,3 +11,29 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.navbarSide {
+  max-width: 1920px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+.sidebar {
+  /* w-[259px] h-8 px-2 mr-2 mb-1 flex items-center hover:bg-slate-100 duration-200 */
+  width: 259px;
+  height: 32px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-right: 8px;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+}
+.sidebar:hover {
+  background: #f7f7f7;
+}
