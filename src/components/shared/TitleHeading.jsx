@@ -28,7 +28,7 @@ const TitleHeading = () => {
   return (
     <div>
       <div className="pt-10 mb-6">
-        <div className="max-w-[828px]">
+        <div className="">
           <div className="flex justify-between pr-10">
             <div className="flex items-center">
             <span className="pr-4">👋</span><h2 className="text-heading1 text-headingText font-bold leading-[48px] ">
@@ -60,7 +60,7 @@ const TitleHeading = () => {
           </div>         
         </div>
         <div className="max-w-[828px] pt-4">
-        <p className="mx-10  border text-grayPrimary">
+        <p className="mx-10 text-grayPrimary">
             Welcome to the documentation for TailAdmin, This documentation
             covers all the essential aspects of using TailAdmin, from
             installation and usage to customization and exploring features.
