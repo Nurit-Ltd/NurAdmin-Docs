@@ -15,8 +15,8 @@ const Sidebar = () => {
         {menus.map((menu, index) => (
           <ul key={index} className="py-4">
             <li onClick={() => toggleMenu(index)} className="sidebar">
-              <Link to="/" className="w-full flex items-center gap-4">
-                <span>👋</span>{" "}
+              <Link to={menu.link} className="w-full flex items-center gap-4">
+                <span>{menu.emoji}</span>{" "}
                 <span className="text-sm text-grayMenu leading-[22px]">
                   {menu.label}
                 </span>

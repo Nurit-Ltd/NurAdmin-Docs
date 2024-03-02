@@ -1,19 +1,61 @@
 export const menus = [
   {
-    label: 'Menu 1',
+    emoji:"👋",
+    label: 'Introduction',
+    link: "/"
+  },
+  {
+    emoji:"👋",
+    label: 'Installation',
+    link: "/installation",
     submenus: [
-      { label: 'Submenu 1.1', link: '#' },
-      { label: 'Submenu 1.2', link: '#' },
-      { label: 'Submenu 1.3', link: '#' },
+      { label: 'HTML Version', link: '#' },
+      { label: 'React Version', link: '#' },
+      { label: 'Next.js Version', link: '#' },
+      { label: 'Vue.js Version', link: '#' },   
     ],
   },
   {
-    label: 'Menu 2',
+    emoji:"👋",
+    label: 'Components',
+    link: "/components",
     submenus: [
-      { label: 'Submenu 2.1', link: '#' },
-      { label: 'Submenu 2.2', link: '#' },
-      { label: 'Submenu 2.3', link: '#' },
+      { label: 'HTML Components', link: '#' },
+      { label: 'React Components', link: '#' },
+      { label: 'Next.js Components', link: '#' },
+      { label: 'Vue.js Components', link: '#' },   
     ],
   },
-  // Add more menus as needed
+  {
+    emoji:"👋",
+    label: 'Customization',
+    link: "/customization",
+  },
+  {
+    emoji:"👋",
+    label: 'Credits and Resources',
+    link: "/credit-resources",
+  },
+  {
+    emoji:"👋",
+    label: 'Update Logs',
+    link: "/updateLog",
+    submenus: [
+      { label: 'HTML', link: '#' },
+      { label: 'React', link: '#' },
+      { label: 'Next.js', link: '#' },
+      { label: 'Vue.js', link: '#' },   
+    ],
+  },
+  {
+    emoji:"👋",
+    label: 'Useful Links',
+    link: "/use-full-links",
+  },
+  {
+    emoji:"👋",
+    label: 'Back to Main Site',
+    link: "/back-to-main",
+  },
+  
 ];
