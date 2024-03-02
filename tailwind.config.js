@@ -11,7 +11,8 @@ export default {
         grayMenu: "#5c6975",
         blueActive: "#346ddb",
         headingText: "#262930",
-        grayPrimary: "#656973"
+        grayPrimary: "#656973",
+        blueIcon: "#307f98"
       },
       fontSize: {
         heading1: "40px",

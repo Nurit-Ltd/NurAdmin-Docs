@@ -12,7 +12,7 @@ const Home = () => {
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="container_fluid ">
+      <div className="">
          <TitleHeading />
       </div>
     </div>
