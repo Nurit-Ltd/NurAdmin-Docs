@@ -1,4 +1,3 @@
-// import adminPic from "../assets/image/intro/adminImage.png";
 import heroImage from "../assets/image/intro/heroIntro.svg";
 import AdminCard from "../components/screen/Home/AdminCard";
 import HomeFooter from "../components/shared/Footer/HomeFooter";

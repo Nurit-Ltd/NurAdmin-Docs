@@ -22,8 +22,7 @@ function App() {
       <Route path="/credit-resources" element={<CreditsAndResources />} />
       <Route path="/updateLog" element={<UpdateLog />} />
       <Route path="/use-full-links" element={<UseFullLinks />} />
-      <Route path="/back-to-main" element={<BackToMain />} />
-      
+      <Route path="/back-to-main" element={<BackToMain />} /> 
     </Route>
   </Routes>
   )

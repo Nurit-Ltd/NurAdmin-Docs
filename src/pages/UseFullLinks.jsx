@@ -3,8 +3,7 @@
 const UseFullLinks = () => {
   return (
     <div>
-      Use
-       FullLinks
+      Use FullLinks
        
     </div>
   );
