@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import HtmlAdmin from "../components/screen/Installation/HtmlAdmin";
+import ReactAdmin from "../components/screen/Installation/ReactAdmin";
 import TitleHeading from "../components/shared/TitleHeading";
 
 const Installation = () => {
@@ -37,7 +38,9 @@ const Installation = () => {
           <section id="section1">
             <HtmlAdmin />
           </section>
-          <section id="section2"></section>
+          <section id="section2">
+            <ReactAdmin />
+          </section>
           <section id="section3"></section>
         </div>
         <nav className=" fixed  top-[105px] right-0 bg-gray-800 text-white p-4 w-[220px] h-[150px]">

@@ -1,15 +1,16 @@
+import React from 'react';
 import CopyText from "../../shared/CopyText";
 
 import { Link } from "react-router-dom";
 
-const HtmlAdmin = () => {
+const ReactAdmin = () => {
   return (
     <div className="w-[828px]">
       <div className="container_fluid">
         <div className="pb-10">
         <div className="pt-6 pb-2">
           <h3 className="text-xl leading-6 text-headingText font-bold">
-            TailAdmin HTML: Tailwind + Alpine.js
+            TailAdmin React: Tailwind + Alpine.js
           </h3>
         </div>
         <div className="pt-3 space-y-3 text-headingText leading-6">
@@ -81,4 +82,4 @@ const HtmlAdmin = () => {
   );
 };
 
-export default HtmlAdmin;
+export default ReactAdmin;
