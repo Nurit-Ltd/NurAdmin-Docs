@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import HtmlAdmin from "../components/screen/Installation/HtmlAdmin";
+import NextJsAdmin from "../components/screen/Installation/NextJsAdmin";
 import ReactAdmin from "../components/screen/Installation/ReactAdmin";
 import TitleHeading from "../components/shared/TitleHeading";
 
@@ -41,7 +42,9 @@ const Installation = () => {
           <section id="section2">
             <ReactAdmin />
           </section>
-          <section id="section3"></section>
+          <section id="section3">
+            <NextJsAdmin />
+          </section>
         </div>
         <nav className=" fixed  top-[105px] right-0 bg-gray-800 text-white p-4 w-[220px] h-[150px]">
           <ul className="">

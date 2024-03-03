@@ -27,7 +27,7 @@ const TitleHeading = ({title, description}) => {
 
   return (
     <div className="w-[828px] overflow-hidden">
-      <div className="pt-10 mb-6">
+      <div className="pt-10">
         <div className="">
           <div className="flex justify-between pr-10">
             <div className="flex items-center">

@@ -10,6 +10,7 @@ export default {
         graySm: "#8899a8",
         headingText: "#262930",
         grayPrimary: "#656973",
+        redText:"#D33D3D",
         blueIcon: "#307f98",
         bgBluer: "#f5f7f9",
         textPerpel:"#8250df"

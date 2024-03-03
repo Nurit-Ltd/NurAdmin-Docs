@@ -1,8 +1,7 @@
-
 import { Link } from "react-router-dom";
 import CopyText from "../../shared/CopyText";
 
-const ReactAdmin = () => {
+const VueJsAdmin = () => {
   return (
     <div className="w-[828px]">
       <div className="container_fluid">
@@ -78,4 +77,4 @@ const ReactAdmin = () => {
   );
 };
 
-export default ReactAdmin;
+export default VueJsAdmin;

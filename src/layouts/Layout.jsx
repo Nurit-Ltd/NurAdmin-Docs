@@ -16,6 +16,7 @@ const Layout = () => {
 
             <div className="w-full">
              <Outlet />
+             
             </div>
         </main>
       </div>
