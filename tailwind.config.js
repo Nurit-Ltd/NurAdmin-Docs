@@ -11,9 +11,12 @@ export default {
         headingText: "#262930",
         grayPrimary: "#656973",
         blueIcon: "#307f98",
+        bgBluer: "#f5f7f9",
+        textPerpel:"#8250df"
       },
       fontSize: {
         heading1: "40px",
+        heading3: "1.17em"
       },
     },
   },

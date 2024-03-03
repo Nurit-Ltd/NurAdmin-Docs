@@ -1,37 +1,53 @@
+import CopyText from "../../shared/CopyText";
 
+import { Link } from "react-router-dom";
 
 const HtmlAdmin = () => {
-  const copyToClipboard = () => {
-    const textToCopy = "Text you want to copy";
-    navigator.clipboard.writeText(textToCopy)
-      .then(() => {
-        console.log('Text copied to clipboard');
-      })
-      .catch((error) => {
-        console.error('Error copying text: ', error);
-      });
-  };
-  const copyThreeClipboard = () => {
-    const textToCopy = "two two";
-    navigator.clipboard.writeText(textToCopy)
-      .then(() => {
-        console.log('Text copied to clipboard');
-      })
-      .catch((error) => {
-        console.error('Error copying text: ', error);
-      });
-  };
   return (
     <div className="w-[828px]">
       <div className="container_fluid">
-      
-    </div>
-    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={copyToClipboard}>
-        Copy Text
-      </button>
-    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={copyThreeClipboard}>
-        Copy Text
-      </button>
+        <div className="pt-6 pb-2">
+          <h3 className="text-xl leading-6 text-headingText font-bold">
+            TailAdmin HTML: Tailwind + Alpine.js
+          </h3>
+        </div>
+        <div className="pt-3 space-y-3 text-headingText leading-6">
+          <p>
+            To use the TailAdmin dashboard template, you'll first have to
+            install it.
+          </p>
+          <p>
+            Follow these steps to install the{" "}
+            <span className="text-blueActive">
+              <Link to={"#"}> TailAdmin Tailwind + AlpineJS</Link>
+            </span>{" "}
+            template:
+          </p>
+          <p>
+            <span className="font-bold">Note:</span> You’ll have to have Node.js
+            installed on your machine. Otherwise, these commands won’t work.
+          </p>
+        </div>
+        <div className="py-4">
+          <ul className="pl-1 list-decimal list-inside space-y-2 text-headingText">
+            <li>
+              Download the dashboard template from TailAdmin, and extract it.
+            </li>
+            <li>Then navigate to the project folder and run this command:</li>
+          </ul>
+        </div>
+        <div>
+          <div className="mt-5 py-2 pl-5 pr-2 w-full h-[38px] flex items-center justify-between bg-bgBluer group ">
+            <p className="text-xs text-textPerpel font-medium leading-[22px]">
+              npm install
+            </p>
+
+            <div className="opacity-0 group-hover:opacity-100 duration-300">
+              <CopyText textToCopy="npm install" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
