@@ -14,7 +14,12 @@ const Home = () => {
         />
       </div>
       <div className="max-w-[828px] pb-10">
-        <TitleHeading />
+        <TitleHeading
+          title="Introduction"
+          description="Welcome to the documentation for TailAdmin, This documentation
+            covers all the essential aspects of using TailAdmin, from
+            installation and usage to customization and exploring features."
+        />
         <AdminCard />
         <HomeFooter />
       </div>
