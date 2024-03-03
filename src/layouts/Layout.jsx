@@ -10,12 +10,9 @@ const Layout = () => {
       </header>
       <div className="">
         <main className="w-full flex mt-[80px]">
-          <div>
-            <Sidebar />
-          </div>
-         <div className="w-full">
-         <Outlet />
-         </div>
+          <Sidebar />
+
+          <Outlet />
         </main>
       </div>
     </div>

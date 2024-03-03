@@ -24,8 +24,7 @@ body {
   font-size: 16px;
 }
 .sidebar {
-  /* w-[259px] h-8 px-2 mr-2 mb-1 flex items-center hover:bg-slate-100 duration-200 */
-  width: 259px;
+  /* width: 265px; */
   height: 32px;
   padding-left: 8px;
   padding-right: 8px;
