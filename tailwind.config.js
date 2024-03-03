@@ -13,7 +13,8 @@ export default {
         redText:"#D33D3D",
         blueIcon: "#307f98",
         bgBluer: "#f5f7f9",
-        textPerpel:"#8250df"
+        textPerpel:"#8250df",
+        activeBar: "#346ddbd9",
       },
       fontSize: {
         heading1: "40px",

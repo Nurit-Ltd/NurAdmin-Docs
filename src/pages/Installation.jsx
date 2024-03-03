@@ -53,17 +53,17 @@ const Installation = () => {
         <nav className="fixed top-[105px] right-0 p-4 w-[220px] h-[150px]">
           <ul className="">
             <h4 className="px-6 mb-[6px] uppercase font-bold text-grayPrimary text-xs leading-[18px] tracking-[1.2px]" >On this page</h4>
-            <li className={`px-6 my-1 ${activeSection === "section1" ? "text-blue-500 border-l-[3px] border-blueActive" : "border-l-[3px] border-white"}`}>
-              <a href="#section1">Section 1</a>
+            <li className={`px-6 my-1 truncate ${activeSection === "section1" ? "text-activeBar border-l-[3px] border-activeBar" : "border-l-[3px] border-white"}`}>
+              <a href="#section1" className="ml-2">TailAdmin Vue: Tailwind + Vue.js</a>
             </li>
-            <li className={activeSection === "section2" ? "text-blue-500" : ""}>
-              <a href="#section2">Section 2</a>
+            <li className={`px-6 my-1 truncate ${activeSection === "section2" ? "text-activeBar border-l-[3px] border-activeBar" : "border-l-[3px] border-white"}`}>
+              <a href="#section2" className="ml-2">TailAdmin React: Tailwind + React.js</a>
             </li>
-            <li className={activeSection === "section3" ? "text-blue-500" : ""}>
-              <a href="#section3">Section 3</a>
+            <li className={`px-6 my-1 truncate ${activeSection === "section3" ? "text-activeBar border-l-[3px] border-activeBar" : "border-l-[3px] border-white"}`}>
+              <a href="#section3" className="ml-2">TailAdmin Next.js: Tailwind + Next.js</a>
             </li>
-            <li className={activeSection === "section4" ? "text-blue-500" : ""}>
-              <a href="#section4">Section 4</a>
+            <li className={`px-6 my-1 truncate ${activeSection === "section4" ? "text-activeBar border-l-[3px] border-activeBar" : "border-l-[3px] border-white"}`}>
+              <a href="#section4" className="ml-2">TailAdmin Vue: Tailwind + Vue.js</a>
             </li>
           </ul>
         </nav>
