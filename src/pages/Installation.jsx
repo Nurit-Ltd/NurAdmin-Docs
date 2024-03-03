@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import HtmlAdmin from "../components/screen/Installation/HtmlAdmin";
 import TitleHeading from "../components/shared/TitleHeading";
 
 const Installation = () => {
@@ -33,7 +34,9 @@ const Installation = () => {
         />
       <div className="flex relative ">
         <div className="">
-          <section id="section1"></section>
+          <section id="section1">
+            <HtmlAdmin />
+          </section>
           <section id="section2"></section>
           <section id="section3"></section>
         </div>
