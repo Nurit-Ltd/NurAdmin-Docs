@@ -1,6 +1,5 @@
-import CopyText from "../../shared/CopyText";
-
 import { Link } from "react-router-dom";
+import CopyText from "../../shared/CopyText";
 
 const HtmlAdmin = () => {
   return (

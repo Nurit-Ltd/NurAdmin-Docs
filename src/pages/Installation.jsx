@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import HtmlAdmin from "../components/screen/Installation/HtmlAdmin";
 import NextJsAdmin from "../components/screen/Installation/NextJsAdmin";
 import ReactAdmin from "../components/screen/Installation/ReactAdmin";
+import VueJsAdmin from "../components/screen/Installation/VueJsAdmin";
 import TitleHeading from "../components/shared/TitleHeading";
 
 const Installation = () => {
@@ -45,10 +46,14 @@ const Installation = () => {
           <section id="section3">
             <NextJsAdmin />
           </section>
+          <section id="section4">
+            <VueJsAdmin />
+          </section>
         </div>
-        <nav className=" fixed  top-[105px] right-0 bg-gray-800 text-white p-4 w-[220px] h-[150px]">
+        <nav className="fixed top-[105px] right-0 p-4 w-[220px] h-[150px]">
           <ul className="">
-            <li className={activeSection === "section1" ? "text-blue-500" : ""}>
+            <h4 className="px-6 mb-[6px] uppercase font-bold text-grayPrimary text-xs leading-[18px] tracking-[1.2px]" >On this page</h4>
+            <li className={`px-6 my-1 ${activeSection === "section1" ? "text-blue-500 border-l-[3px] border-blueActive" : "border-l-[3px] border-white"}`}>
               <a href="#section1">Section 1</a>
             </li>
             <li className={activeSection === "section2" ? "text-blue-500" : ""}>
@@ -56,6 +61,9 @@ const Installation = () => {
             </li>
             <li className={activeSection === "section3" ? "text-blue-500" : ""}>
               <a href="#section3">Section 3</a>
+            </li>
+            <li className={activeSection === "section4" ? "text-blue-500" : ""}>
+              <a href="#section4">Section 4</a>
             </li>
           </ul>
         </nav>

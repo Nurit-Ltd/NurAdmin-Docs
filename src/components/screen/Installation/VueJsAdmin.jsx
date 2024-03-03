@@ -1,31 +1,36 @@
 import { Link } from "react-router-dom";
 import CopyText from "../../shared/CopyText";
+import FooterAllPage from "../../shared/Footer/FooterAllPage";
 
 const VueJsAdmin = () => {
   return (
     <div className="w-[828px]">
       <div className="container_fluid">
-        <div className="pt-20">
+        <div className="pt-20 pb-10">
           <div className="pb-2">
             <h3 className="text-xl leading-6 text-headingText font-bold">
-              TailAdmin React: Tailwind + React.js
+              TailAdmin Vue: Tailwind + Vue.js
             </h3>
           </div>
           <div className="pt-3 space-y-3 text-headingText leading-6">
-            <p>
-              In this part, we are going to show you how to install the
-              TailAdmin React template.
+            <p className="max-w-[634px]">
+              In this section, we ll guide you through the installation process
+              of the TailAdmin Vue template.
             </p>
-            <p>Follow these steps to install the templates.</p>
+            <p>Follow these steps to install the template:</p>
             <p>
-              <span className="font-bold">Note:</span> We’ve used Vite to
-              develop the Tailwind + ReactJS template.
+              <span className="font-bold">Note:</span> We've utilized
+              <span className="font-bold"> Vite </span> as build tool for
+              TailAdmin Vue.
             </p>
           </div>
           <div className="py-4">
             <ul className="pl-1 list-decimal list-inside space-y-2 text-headingText">
-              <li>Download the dashboard template from TailAdmin</li>
-              <li>Then navigate to the project folder and run this command:</li>
+              <li>Download and extract the TailAdmin zip package</li>
+              <li>
+                Navigate to the project folder and execute the following
+                command:
+              </li>
             </ul>
           </div>
           <div>
@@ -39,7 +44,7 @@ const VueJsAdmin = () => {
               </div>
             </div>
             <p className="py-9 text-headingText leading-6">
-              1. After that run this command to start the local server.
+              3. After that, run this command to start the local server:
             </p>
             <div className="py-2 pl-5 pr-2 w-full h-[38px] flex items-center justify-between bg-bgBluer group ">
               <p className="text-xs text-textPerpel font-medium leading-[22px]">
@@ -52,8 +57,8 @@ const VueJsAdmin = () => {
             </div>
             <div className="space-y-4 pt-9">
               <p className="text-headingText max-w-[550px] leading-6">
-                When the dev command runs successfully the Dashboard will be
-                open on port:{" "}
+                Upon successful execution of the dev command, the TailAdmin will
+                open on port:
                 <span className="text-blueActive">
                   <Link to={"http://localhost:5173/"}>
                     http://localhost:5173/
@@ -61,17 +66,30 @@ const VueJsAdmin = () => {
                 </span>
               </p>
               <p className="text-headingText leading-6">
-                Now you can customize the dashboard and see the changes locally.
+                Now, you can customize the dashboard and observe the changes
+                locally
               </p>
               <p className="text-headingText leading-6">
-                After that, run this command to generate the <span className="font-medium">build</span> folder. You
-                can upload this build folder to your server, and the dashboard
-                will be live.
+                Once customization is complete, run the following command to
+                generate the <span className="font-medium">build</span> folder.
+                You can then upload this build folder to your server, and the
+                dashboard will be live.
               </p>
-              <p className="text-redText bg-bgBluer px-1 w-fit">npm run build</p>
+
+              <div className="py-2 pl-5 pr-2 w-full h-[38px] flex items-center justify-between bg-bgBluer group ">
+                <p className="text-xs text-textPerpel font-medium leading-[22px]">
+                  npm <span className="text-headingText">run build</span>
+                </p>
+
+                <div className="opacity-0 group-hover:opacity-100 duration-300">
+                  <CopyText textToCopy="npm run build" />
+                </div>
+              </div>
             </div>
           </div>
+          <FooterAllPage title1="Introduction" title2="Components" link1="/" link2="/components" />
         </div>
+        
       </div>
     </div>
   );
