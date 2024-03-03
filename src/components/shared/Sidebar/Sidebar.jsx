@@ -12,15 +12,16 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="w-[310px] border-r h-full">
-      <div className="ml-6 py-4 fixed overflow-y-auto h-full">
+    <div className="w-[293px] border-r h-full">
+      <div className="ml-6 py-4  fixed h-screen  overflow-y-auto">
         {menus.slice(0, 1).map((menu, index) => (
-          <ul key={index} className="overflow-y-auto">
+          <ul key={index}>
             <li className="sidebar">
               <Link to={menu.link} className="w-full flex items-center gap-4">
                 <span>{menu.emoji}</span>{" "}
                 <span className="text-sm text-grayMenu leading-[22px]">
                   {menu.label}
+
                 </span>
               </Link>
             </li>
@@ -53,7 +54,7 @@ const Sidebar = () => {
                     <li key={subIndex}>
                       <a
                         href={submenu.link}
-                        className=" h-8 flex items-center  px-2 text-gray-800 hover:bg-gray-200"
+                        className="w-[228px] h-8 flex items-center  px-2 text-gray-800 hover:bg-gray-200"
                       >
                         {submenu.label}
                       </a>
@@ -92,7 +93,7 @@ const Sidebar = () => {
                     <li key={subIndex}>
                       <a
                         href={submenu.link}
-                        className=" h-8 flex items-center  px-2 text-gray-800 hover:bg-gray-200"
+                        className="w-[228px] h-8 flex items-center  px-2 text-gray-800 hover:bg-gray-200"
                       >
                         {submenu.label}
                       </a>
@@ -145,7 +146,7 @@ const Sidebar = () => {
                     <li key={subIndex}>
                       <a
                         href={submenu.link}
-                        className="w-[235px] h-8 flex items-center  px-2 text-gray-800 hover:bg-gray-200"
+                        className="w-[228px] h-8 flex items-center  px-2 text-gray-800 hover:bg-gray-200"
                       >
                         {submenu.label}
                       </a>
@@ -171,7 +172,7 @@ const Sidebar = () => {
            
           </ul>
         ))}
-        {menus.slice(7, 8).map((menu, index) => (
+        {menus.slice(7, ).map((menu, index) => (
           <ul key={index} className="">
             <li   className="sidebar flex items-center  justify-between">
               <Link to={menu.link} className="w-full flex items-center gap-4">
