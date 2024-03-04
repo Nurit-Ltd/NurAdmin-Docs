@@ -11,10 +11,10 @@ export const menus = [
     label: "Installation",
     link: "/installation",
     submenus: [
-      { label: "HTML Version", link: "#" },
-      { label: "React Version", link: "#" },
-      { label: "Next.js Version", link: "#" },
-      { label: "Vue.js Version", link: "#" },
+      { label: "HTML Version", link: "#section1" },
+      { label: "React Version", link: "#section2" },
+      { label: "Next.js Version", link: "#section3" },
+      { label: "Vue.js Version", link: "#section4" },
     ],
   },
   {

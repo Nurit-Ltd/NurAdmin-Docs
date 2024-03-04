@@ -31,7 +31,7 @@ const TitleHeading = ({title, description}) => {
         <div className="">
           <div className="flex justify-between pr-10">
             <div className="flex items-center">
-            <span className="pr-4">👋</span><h2 className="text-heading1 text-headingText font-bold leading-[48px] ">
+            <span className="pr-4 text-2xl">👋</span><h2 className="text-heading1 text-headingText font-bold leading-[48px] ">
               {title}
             </h2>
             </div>

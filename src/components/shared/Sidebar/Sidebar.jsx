@@ -8,7 +8,6 @@ const Sidebar = () => {
   const [openMenuIndex, setOpenMenuIndex] = useState(null);
 
   const toggleMenu = (index) => {
-    console.log("Toggle menu called for index:", index);
     setOpenMenuIndex(openMenuIndex === index ? null : index);
   };
 
