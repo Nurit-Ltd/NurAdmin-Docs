@@ -3,6 +3,7 @@ import HtmlAdmin from "../components/screen/Installation/HtmlAdmin";
 import NextJsAdmin from "../components/screen/Installation/NextJsAdmin";
 import ReactAdmin from "../components/screen/Installation/ReactAdmin";
 import VueJsAdmin from "../components/screen/Installation/VueJsAdmin";
+import FooterAllPage from "../components/shared/Footer/FooterAllPage";
 import TitleHeading from "../components/shared/TitleHeading";
 
 const Installation = () => {
@@ -49,6 +50,9 @@ const Installation = () => {
           <section id="section4">
             <VueJsAdmin />
           </section>
+          <div className="container_fluid pb-10">
+          <FooterAllPage title1="Introduction" title2="Components" link1="/" link2="/components" />
+          </div>
         </div>
         <nav className="fixed top-[105px] right-0 p-4 w-[220px] h-[150px]">
           <ul className="">

@@ -2,7 +2,7 @@ export const components = [
   {
     id: 1,
     img: "🌐",
-    link: "/html-components",
+    link: "/components/html-components",
     title: "HTML Components",
   },
   {

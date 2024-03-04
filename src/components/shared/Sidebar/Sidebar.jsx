@@ -17,7 +17,7 @@ const Sidebar = () => {
         {menus.map((menu, index) => (
           <ul key={index} className="">
             <li
-              onClick={() => toggleMenu(index)}
+              
               className="sidebar flex items-center  justify-between"
             >
               <Link to={menu.link} className="w-full flex items-center gap-4">
@@ -27,7 +27,7 @@ const Sidebar = () => {
                 </span>
               </Link>
               {menu.submenus && (
-                <span>
+                <span onClick={() => toggleMenu(index)}>
                   {openMenuIndex === index ? (
                     <MdKeyboardArrowDown className="w-[18px] h-[18px] text-blueActive" />
                   ) : (
@@ -41,10 +41,11 @@ const Sidebar = () => {
                 <div className="border-l">
                   <ul className="pl-2">
                     {menu.submenus.map((submenu, subIndex) => (
-                      <li key={subIndex}>
+                      <li key={subIndex} className=" gap-3 w-[228px] h-8 flex items-center  px-2 text-gray-800 hover:bg-gray-200">
+                        {submenu.img}
                         <a
                           href={submenu.link}
-                          className="w-[228px] h-8 flex items-center  px-2 text-gray-800 hover:bg-gray-200"
+                          className=""
                         >
                           {submenu.label}
                         </a>

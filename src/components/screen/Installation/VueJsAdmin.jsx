@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom";
 import CopyText from "../../shared/CopyText";
-import FooterAllPage from "../../shared/Footer/FooterAllPage";
 
 const VueJsAdmin = () => {
   return (
     <div className="w-[828px]">
       <div className="container_fluid">
-        <div className="pt-20 pb-10">
+        <div className="pt-20">
           <div className="pb-2">
             <h3 className="text-xl leading-6 text-headingText font-bold">
               TailAdmin Vue: Tailwind + Vue.js
@@ -87,7 +86,7 @@ const VueJsAdmin = () => {
               </div>
             </div>
           </div>
-          <FooterAllPage title1="Introduction" title2="Components" link1="/" link2="/components" />
+          
         </div>
         
       </div>

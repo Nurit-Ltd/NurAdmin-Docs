@@ -23,10 +23,10 @@ export const menus = [
     label: "Components",
     link: "/components",
     submenus: [
-      { label: "HTML Components", link: "#" },
-      { label: "React Components", link: "#" },
-      { label: "Next.js Components", link: "#" },
-      { label: "Vue.js Components", link: "#" },
+      { img: "🌐", label: "HTML Components", link: "/components/html-components" },
+      { img: "💎", label: "React Components", link: "#" },
+      { img: "🔥", label: "Next.js Components", link: "#" },
+      { img: "🌳", label: "Vue.js Components", link: "#" },
     ],
   },
   {
@@ -65,6 +65,6 @@ export const menus = [
     label: "Back to Main Site",
     link: "https://tailadmin.com/",
   },
-  
+
   //-----------------------------
 ];

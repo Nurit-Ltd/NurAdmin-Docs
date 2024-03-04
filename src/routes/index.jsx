@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import HtmlComponent from "../components/screen/Component/HtmlComponent";
 import Layout from "../layouts/Layout";
 import BackToMain from "../pages/BackToMain";
 import Components from "../pages/Components";
@@ -46,6 +47,10 @@ export const router = createBrowserRouter([
       {
         path: "https://tailadmin.com/",
         element: <BackToMain />,
+      },
+      {
+        path: "/components/html-components",
+        element: <HtmlComponent />,
       },
     ],
   },
