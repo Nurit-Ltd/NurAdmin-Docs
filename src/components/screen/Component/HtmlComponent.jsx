@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import FooterAllPage from "../../shared/Footer/FooterAllPage";
 import TitleHeading from "../../shared/TitleHeading";
+import AnalyticsChart from "./AnalyticsChart";
 import FormInputField from "./FormInputField";
 
 const HtmlComponent = () => {
@@ -36,18 +37,17 @@ const HtmlComponent = () => {
       />
       <div className="w-[828px] relative">
         <div className="container_fluid">
-           
-              <h5 className="pt-12 font-bold text-blueIcon leading-6">Here are a few examples of the components:</h5>
-         
+          <h5 className="pt-12 font-bold text-blueIcon leading-6">
+            Here are a few examples of the components:
+          </h5>
+
           <section id="section1">
             <FormInputField />
           </section>
           <section id="section2">
-            
+             <AnalyticsChart />
           </section>
-          <section id="section3">
-            
-          </section>
+          <section id="section3"></section>
 
           <div className="pb-10">
             <FooterAllPage
