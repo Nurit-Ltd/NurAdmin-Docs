@@ -45,7 +45,7 @@ export const menus = [
     id: 6,
     emoji: "☑️",
     label: "Update Logs",
-    link: "/updateLog",
+    link: "/update-log",
     submenus: [
       { label: "HTML", link: "#" },
       { label: "React", link: "#" },
@@ -63,7 +63,7 @@ export const menus = [
     id: 8,
     emoji: "🎯",
     label: "Back to Main Site",
-    link: "/back-to-main",
+    link: "https://tailadmin.com/",
   },
   
   //-----------------------------
