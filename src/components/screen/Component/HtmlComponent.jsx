@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import FooterAllPage from "../../shared/Footer/FooterAllPage";
 import TitleHeading from "../../shared/TitleHeading";
+import FormInputField from "./FormInputField";
 
 const HtmlComponent = () => {
   const [activeSection, setActiveSection] = useState(null);
@@ -33,28 +34,22 @@ const HtmlComponent = () => {
         description="TailAdmin HTML: Tailwind + Alpine.js has more than 200 components, and you can use them to build any kind of dashboard you need.
           "
       />
-      <div className="">
-        <div className="">
+      <div className="w-[828px] relative">
+        <div className="container_fluid">
+           
+              <h5 className="pt-12 font-bold text-blueIcon leading-6">Here are a few examples of the components:</h5>
+         
           <section id="section1">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit
-            quisquam facere odio rerum aspernatur obcaecati veritatis modi,
-            dolore quos ipsum, tenetur ullam, esse fugit. Alias voluptatem quo
-            mollitia iusto adipisci.
+            <FormInputField />
           </section>
           <section id="section2">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-            sit ad cupiditate animi omnis dolore unde natus veritatis illo
-            accusantium quia autem officiis alias, dolor rerum vitae tempora
-            enim. Rerum?
+            
           </section>
           <section id="section3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-            praesentium tempore nisi ipsam laboriosam aliquid quo porro aperiam
-            reiciendis culpa voluptates quis officia voluptate natus eaque
-            quibusdam suscipit, sint a.
+            
           </section>
 
-          <div className="container_fluid pb-10">
+          <div className="pb-10">
             <FooterAllPage
               title1="Introduction"
               title2="Components"
