@@ -20,6 +20,12 @@ export default {
         heading1: "40px",
         heading3: "1.17em"
       },
+      padding:{
+        25: "100px"
+      },
+      margin:{
+        25: "100px"
+      }
     },
   },
   plugins: [],
