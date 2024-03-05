@@ -3,6 +3,10 @@ import HtmlComponent from "../components/screen/Component/HtmlCom/HtmlComponent"
 import NextComponents from "../components/screen/Component/NextCom/NextComponents";
 import ReactComponent from "../components/screen/Component/ReactCom/ReactComponent";
 import VueComponent from "../components/screen/Component/VueCom/VueComponent";
+import UpdateHtml from "../components/screen/UpdateAndLog/UpdateHtml";
+import UpdateNext from "../components/screen/UpdateAndLog/UpdateNext";
+import UpdateReact from "../components/screen/UpdateAndLog/UpdateReact";
+import UpdateVue from "../components/screen/UpdateAndLog/UpdateVue";
 import Layout from "../layouts/Layout";
 import BackToMain from "../pages/BackToMain";
 import Components from "../pages/Components";
@@ -66,6 +70,22 @@ export const router = createBrowserRouter([
       {
         path: "/components/vue-components",
         element: <VueComponent />,
+      },
+      {
+        path: "/update-log/html",
+        element: <UpdateHtml /> ,
+      },
+      {
+        path: "/update-log/react",
+        element: <UpdateReact />,
+      },
+      {
+        path: "/update-log/next.js",
+        element: <UpdateNext />,
+      },
+      {
+        path: "/update-log/vue",
+        element: <UpdateVue />,
       },
     ],
   },

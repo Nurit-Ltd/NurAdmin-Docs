@@ -47,10 +47,10 @@ export const menus = [
     label: "Update Logs",
     link: "/update-log",
     submenus: [
-      { label: "HTML", link: "#" },
-      { label: "React", link: "#" },
-      { label: "Next.js", link: "#" },
-      { label: "Vue.js", link: "#" },
+      { label: "HTML", link: "/update-log/html" },
+      { label: "React", link: "/update-log/react" },
+      { label: "Next.js", link: "/update-log/next.js" },
+      { label: "Vue.js", link: "/update-log/vue" },
     ],
   },
   {
