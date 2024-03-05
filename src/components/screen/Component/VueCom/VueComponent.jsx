@@ -29,9 +29,9 @@ const VueComponent = () => {
   return (
     <>
       <TitleHeading
-        emoji="💎"
-        title="React.js Components"
-        description="TailAdmin: ReactJS + Tailwind offer more than 200 dashboard UI components. You can use them to build ReactJS + Tailwind CSS dashboard templates easily.
+        emoji="🌳"
+        title="Vue.js Components"
+        description="TailAdmin: Vue.js + Tailwind offer more than 200 dashboard UI components. You can use them to build ReactJS + Tailwind CSS dashboard templates easily..
           "
       />
       <div className="w-[828px] relative">
@@ -39,7 +39,7 @@ const VueComponent = () => {
           <div>
             <div className="space-y-3 pt-9 text-headingText leading-6">
               <p>
-                To use the ReactJS components first you’ll have to import them.
+              To use the Vue.js components first you’ll have to import them.
               </p>
               <p>You can do that easily by following this command.</p>
             </div>
