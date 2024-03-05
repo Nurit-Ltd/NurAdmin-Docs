@@ -1,6 +1,6 @@
 import Markdown from "markdown-to-jsx";
 import { useEffect, useState } from "react";
-import { htmlComponents } from "../../../data/formInputData";
+import { htmlComponents } from "../../../../data/formInputData";
 const FormInputField = () => {
   
   const [postContent, setPostContent] = useState("");
@@ -16,7 +16,7 @@ const FormInputField = () => {
       })
   }, []); 
   return (
-    <div className="pt-10">
+    <div className="pt-20">
       {htmlComponents.map((item) => (
         <div key={item.id} className="space-y-8">
           <h3 className="text-xl text-headingText font-bold leading-6">

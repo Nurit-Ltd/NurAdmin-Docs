@@ -24,9 +24,9 @@ export const menus = [
     link: "/components",
     submenus: [
       { img: "🌐", label: "HTML Components", link: "/components/html-components" },
-      { img: "💎", label: "React Components", link: "#" },
-      { img: "🔥", label: "Next.js Components", link: "#" },
-      { img: "🌳", label: "Vue.js Components", link: "#" },
+      { img: "💎", label: "React Components", link: "/components/react-components" },
+      { img: "🔥", label: "Next.js Components", link: "/components/next-components" },
+      { img: "🌳", label: "Vue.js Components", link: "/components/vue-components" },
     ],
   },
   {

@@ -1,5 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
-import HtmlComponent from "../components/screen/Component/HtmlComponent";
+import HtmlComponent from "../components/screen/Component/HtmlCom/HtmlComponent";
+import NextComponents from "../components/screen/Component/NextCom/NextComponents";
+import ReactComponent from "../components/screen/Component/ReactCom/ReactComponent";
+import VueComponent from "../components/screen/Component/VueCom/VueComponent";
 import Layout from "../layouts/Layout";
 import BackToMain from "../pages/BackToMain";
 import Components from "../pages/Components";
@@ -51,6 +54,18 @@ export const router = createBrowserRouter([
       {
         path: "/components/html-components",
         element: <HtmlComponent />,
+      },
+      {
+        path: "/components/react-components",
+        element: <ReactComponent />,
+      },
+      {
+        path: "/components/next-components",
+        element: <NextComponents />,
+      },
+      {
+        path: "/components/vue-components",
+        element: <VueComponent />,
       },
     ],
   },

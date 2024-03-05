@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import FooterAllPage from "../../shared/Footer/FooterAllPage";
-import TitleHeading from "../../shared/TitleHeading";
+import FooterAllPage from "../../../shared/Footer/FooterAllPage";
+import TitleHeading from "../../../shared/TitleHeading";
 import AnalyticsChart from "./AnalyticsChart";
 import FormInputField from "./FormInputField";
+import TodoList from "./TodoList";
 
 const HtmlComponent = () => {
   const [activeSection, setActiveSection] = useState(null);
@@ -47,7 +48,9 @@ const HtmlComponent = () => {
           <section id="section2">
              <AnalyticsChart />
           </section>
-          <section id="section3"></section>
+          <section id="section3">
+            <TodoList />
+          </section>
 
           <div className="pb-10">
             <FooterAllPage

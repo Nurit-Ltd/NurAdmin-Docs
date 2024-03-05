@@ -8,19 +8,19 @@ export const components = [
   {
     id: 2,
     img: "💎",
-    link: "/react-components",
+    link: "/components/react-components",
     title: "React.js Components",
   },
   {
     id: 3,
     img: "🔥",
-    link: "/next-js-components",
+    link: "/components/next-components",
     title: "Next.js Components",
   },
   {
     id: 4,
     img: "🌳",
-    link: "/vue-js-components",
+    link: "/components/vue-components",
     title: "Vue.js Components",
   },
 ];
