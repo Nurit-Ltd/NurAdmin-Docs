@@ -13,7 +13,7 @@ const HtmlAdmin = () => {
           </div>
           <div className="pt-3 space-y-3 text-headingText leading-6">
             <p>
-              To use the TailAdmin dashboard template, you'll first have to
+              To use the TailAdmin dashboard template, you ll first have to
               install it.
             </p>
             <p>
