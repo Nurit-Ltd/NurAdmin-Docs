@@ -46,7 +46,6 @@ const Customization = () => {
               many more.
             </p>
           </div>
-
           <section id="section1">
             <Color />
           </section>
