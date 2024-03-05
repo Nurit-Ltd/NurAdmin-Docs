@@ -87,33 +87,33 @@ const ReactComponent = () => {
               className={`px-6 my-1 truncate ${
                 activeSection === "section1"
                   ? "text-activeBar border-l-[3px] border-activeBar"
-                  : "border-l-[3px] border-white"
+                  : "border-l-[3px] border-white text-headingText"
               }`}
             >
               <a href="#section1" className="ml-2">
-                Form Input Field:
+              Breadcrumb:
               </a>
             </li>
             <li
               className={`px-6 my-1 truncate ${
                 activeSection === "section2"
                   ? "text-activeBar border-l-[3px] border-activeBar"
-                  : "border-l-[3px] border-white"
+                  : "border-l-[3px] border-white text-headingText"
               }`}
             >
               <a href="#section2" className="ml-2">
-                Analytics Chart:
+              Alerts:
               </a>
             </li>
             <li
               className={`px-6 my-1 truncate ${
                 activeSection === "section3"
                   ? "text-activeBar border-l-[3px] border-activeBar"
-                  : "border-l-[3px] border-white"
+                  : "border-l-[3px] border-white text-headingText"
               }`}
             >
               <a href="#section3" className="ml-2">
-                Todo List:
+              Accordion:
               </a>
             </li>
           </ul>
