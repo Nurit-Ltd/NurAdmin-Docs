@@ -15,6 +15,7 @@ const BreadCum = () => {
           <div>
             <img src={item.formImg} alt="form-input" />
           </div>
+          <p className="text-headingText leading-6">{item.markText}</p>
         </div>
       ))}
     </div>
