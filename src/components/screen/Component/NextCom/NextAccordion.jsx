@@ -1,9 +1,8 @@
-import { vueAccordion } from '../../../../data/VueComData';
-
-const VueAccordion = () => {
+import { nextAccordion } from "../../../../data/nextComData";
+const NextAccordion = () => {
   return (
     <div className="pt-20">
-    {vueAccordion.map((item) => (
+    {nextAccordion.map((item) => (
       <div key={item.id} className="space-y-8">
         <h3 className="text-xl text-headingText font-bold leading-6">
           {item.title}
@@ -27,4 +26,4 @@ const VueAccordion = () => {
   );
 };
 
-export default VueAccordion;
+export default NextAccordion;
