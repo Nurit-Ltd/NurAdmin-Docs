@@ -4,9 +4,10 @@ import { htmlComponents } from "../../../data/formInputData";
 const FormInputField = () => {
   
   const [postContent, setPostContent] = useState("");
+  const fileName ='artical.md'
 
   useEffect(() => {
-    import("../../../markdown/artical.md")
+    import(`../../../markdown/${fileName}`)
       .then(res => {
         fetch(res.default)
           .then(response => response.text())
@@ -37,10 +38,8 @@ const FormInputField = () => {
           </div>
         </div>
       ))}
-      <div className="w-full h">
-      <Markdown>
-            {postContent}
-          </Markdown>
+      <div className="w-full border">
+      <Markdown>{postContent}</Markdown>
       </div>
     </div>
   );
