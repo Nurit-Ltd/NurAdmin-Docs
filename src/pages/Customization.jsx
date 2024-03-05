@@ -1,4 +1,8 @@
 import { useEffect, useState } from "react";
+import Color from "../components/screen/Customization/Color";
+import DarkMode from "../components/screen/Customization/DarkMode";
+import Screen from "../components/screen/Customization/Screen";
+import Spacing from "../components/screen/Customization/Spacing";
 import FooterAllPage from "../components/shared/Footer/FooterAllPage";
 import TitleHeading from "../components/shared/TitleHeading";
 
@@ -44,13 +48,16 @@ const Customization = () => {
           </div>
 
           <section id="section1">
-          
+            <Color />
           </section>
           <section id="section2">
-           
+            <DarkMode />
           </section>
           <section id="section3">
-            
+            <Spacing />
+          </section>
+          <section id="section4">
+             <Screen />
           </section>
 
           <div className="pb-10">
@@ -75,7 +82,7 @@ const Customization = () => {
               }`}
             >
               <a href="#section1" className="ml-2">
-                Breadcrumb:
+                Colors:
               </a>
             </li>
             <li
@@ -86,7 +93,7 @@ const Customization = () => {
               }`}
             >
               <a href="#section2" className="ml-2">
-                Alerts:
+                Dark Mode Settings:
               </a>
             </li>
             <li
@@ -97,7 +104,18 @@ const Customization = () => {
               }`}
             >
               <a href="#section3" className="ml-2">
-                Accordion:
+                Spacing:
+              </a>
+            </li>
+            <li
+              className={`px-6 my-1 truncate ${
+                activeSection === "section4"
+                  ? "text-activeBar border-l-[3px] border-activeBar"
+                  : "border-l-[3px] border-white text-headingText"
+              }`}
+            >
+              <a href="#section3" className="ml-2">
+                Screen:
               </a>
             </li>
           </ul>

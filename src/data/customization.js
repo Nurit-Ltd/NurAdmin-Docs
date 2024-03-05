@@ -30,7 +30,7 @@ export const screen =[
     id:1,
     title: "Screen:",
     description: "You can add custom breakpoints by adding the custom values to the screen key.",
-    documnet: "This is how you can add custom styling to your Tailwind CSS project. If you want to learn more and customize other things like font family, opacity, etc, check out the",
+    documents: "This is how you can add custom styling to your Tailwind CSS project. If you want to learn more and customize other things like font family, opacity, etc, check out the",
     link: "https://tailwindcss.com/docs/configuration"
   },
 ]
