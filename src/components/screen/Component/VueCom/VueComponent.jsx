@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import CopyText from "../../../shared/CopyText";
 import FooterAllPage from "../../../shared/Footer/FooterAllPage";
 import TitleHeading from "../../../shared/TitleHeading";
+import VueAccordion from "./VueAccordion";
+import VueArts from "./VueArts";
+import VueBreadCum from "./VueBreadCum";
 
 const VueComponent = () => {
   const [activeSection, setActiveSection] = useState(null);
@@ -57,13 +60,13 @@ const VueComponent = () => {
             </h5>
           </div>
           <section id="section1">
-            
+             <VueBreadCum />
           </section>
           <section id="section2">
-            
+             <VueArts />
           </section>
           <section id="section3">
-            
+              <VueAccordion />
           </section>
 
           <div className="pb-10">
