@@ -13,14 +13,14 @@ const Home = () => {
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="max-w-[828px] pb-10">
-        <TitleHeading
-         emoji="👋"
-          title="Introduction"
-          description="Welcome to the documentation for TailAdmin, This documentation
+      <TitleHeading
+        emoji="👋"
+        title="Introduction"
+        description="Welcome to the documentation for TailAdmin, This documentation
             covers all the essential aspects of using TailAdmin, from
             installation and usage to customization and exploring features."
-        />
+      />
+      <div className="max-w-[828px] pb-10">
         <AdminCard />
         <HomeFooter />
       </div>

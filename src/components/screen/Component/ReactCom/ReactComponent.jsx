@@ -78,7 +78,7 @@ const ReactComponent = () => {
             />
           </div>
         </div>
-        <nav className="fixed top-[105px] right-0 p-4 w-[220px] h-[150px]">
+        <nav className="hidden xl:block fixed top-[105px] right-0 p-4 w-[220px] h-[150px]">
           <ul className="">
             <h4 className="px-6 mb-[6px] uppercase font-bold text-grayPrimary text-xs leading-[18px] tracking-[1.2px]">
               On this page
