@@ -16,10 +16,7 @@ const Sidebar = () => {
       <div className="ml-6 py-4  fixed h-screen   overflow-y-auto">
         {menus.map((menu, index) => (
           <ul key={index} className="">
-            <li
-              
-              className="sidebar flex items-center  justify-between"
-            >
+            <li className="sidebar flex items-center  justify-between">
               <Link to={menu.link} className="w-full flex items-center gap-4">
                 <span>{menu.emoji}</span>{" "}
                 <span className="text-sm text-grayMenu leading-[22px]">
@@ -41,15 +38,15 @@ const Sidebar = () => {
                 <div className="border-l">
                   <ul className="pl-2">
                     {menu.submenus.map((submenu, subIndex) => (
-                      <li key={subIndex} className=" gap-3 w-[228px] h-8 flex items-center  px-2 text-gray-800 hover:bg-gray-200">
-                        {submenu.img}
-                        <a
-                          href={submenu.link}
-                          className=""
-                        >
-                          {submenu.label}
-                        </a>
-                      </li>
+                      <Link
+                        to={submenu.link}
+                        key={subIndex}
+                        className=" gap-3 w-[228px] h-8 flex items-center  px-2 text-gray-800 hover:bg-gray-200 "
+                      >
+                        <span> {submenu.img}</span>
+
+                        <span>{submenu.label}</span>
+                      </Link>
                     ))}
                   </ul>
                 </div>

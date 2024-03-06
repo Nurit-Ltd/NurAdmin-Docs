@@ -1,5 +1,7 @@
+import FooterAllPage from "../../../components/shared/Footer/FooterAllPage";
 import { updateHtml } from "../../../data/updateHtml";
 import TitleHeading from "../../shared/TitleHeading";
+
 
 const UpdateHtml = () => {
   return (
@@ -59,6 +61,14 @@ const UpdateHtml = () => {
                 </div>
               ))}
             </div>
+          </div>
+          <div className="pb-10">
+            <FooterAllPage
+              title1="Introduction"
+              title2="Components"
+              link1="/"
+              link2="/components"
+            />
           </div>
         </div>
       </div>
