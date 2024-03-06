@@ -1,8 +1,8 @@
-export const updateHtml = [
+export const updateNextJs = [
   {
     id: 1,
     version: "1.3.0",
-    releaseDate: ["Jan",  2024],
+    releaseDate: ["Jan", 2024],
     newFeatures: [
       {
         id: 1,
@@ -82,7 +82,11 @@ export const updateHtml = [
       },
     ],
     enhancements: [
-     
+      {
+        id: 1,
+        name: "Enhancement 01",
+        details: "Update Next.js into version 14",
+      },
       {
         id: 2,
         name: "Enhancement 02",
@@ -115,37 +119,7 @@ export const updateHtml = [
   },
   {
     id: 2,
-    version: "1.2.0",
-    releaseDate: ["May", 2023],
-    features: [
-      "Date Picker and Style Enhancements",
-      "Data tables style updated",
-    ],
+    releaseDate: ["August", 2023],
+    features: ["Initial Release"],
   },
-  {
-    id: 3,
-    version: "1.1.0",
-    releaseDate: ["April", 2023],
-    features: [
-      "New Pro Components",
-      "New Pro Dashboards",
-      "Updated and Improved Data Tables"
-    ]
-  },
-  {
-    id: 4,
-    version: "1.1.1",
-    releaseDate: ["June", 6],
-    features: [
-      "Updated packages"
-    ]
-  },
-  {
-    id: 5,
-    version: "1.0",
-    releaseDate: ["January", 2],
-    features: [
-      "Initial Release"
-    ]
-  }
 ];
