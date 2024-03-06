@@ -14,6 +14,7 @@ export default {
         blueIcon: "#307f98",
         bgBluer: "#f5f7f9",
         textPerpel:"#8250df",
+        bgPink: "#ffe4e3",
         activeBar: "#346ddbd9",
       },
       fontSize: {
