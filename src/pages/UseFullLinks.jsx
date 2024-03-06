@@ -1,6 +1,6 @@
 
 import UseFullLInk from "../components/screen/UseFullLinks/UseFullLInk";
-import FooterAllPage from "../components/shared/Footer/FooterAllPage";
+import FooterLastPage from "../components/shared/Footer/FooterLastPage";
 import TitleHeading from "../components/shared/TitleHeading";
 
 
@@ -15,12 +15,7 @@ const UseFullLinks = () => {
         <div className="container_fluid">
              <UseFullLInk />
           <div className="pb-10">
-            <FooterAllPage
-              title1="Installation"
-              title2="HTML Components"
-              link1="/installation"
-              link2="/components/html-components"
-            />
+            <FooterLastPage />
           </div>
         </div>
       </div>

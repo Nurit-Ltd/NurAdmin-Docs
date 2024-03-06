@@ -5,10 +5,7 @@ import TitleHeading from "../../shared/TitleHeading";
 const UpdateVue = () => {
   return (
     <>
-      <TitleHeading
-        title="Next.js"
-        description="Update Logs for TailAdmin Next.js version"
-      />
+      <TitleHeading title="Vue.js" />
       <div className="w-[828px]">
         <div className="container_fluid">
           <div className="pt-12 pb-20">
