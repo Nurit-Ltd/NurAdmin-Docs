@@ -1,8 +1,8 @@
-export const updateNextJs = [
+export const updateNext = [
   {
     id: 1,
     version: "1.3.0",
-    releaseDate: ["Jan", 2024],
+    releaseDate: ["Feb 05", 2024],
     newFeatures: [
       {
         id: 1,
