@@ -15,6 +15,7 @@ const Home = () => {
       </div>
       <div className="max-w-[828px] pb-10">
         <TitleHeading
+         emoji="👋"
           title="Introduction"
           description="Welcome to the documentation for TailAdmin, This documentation
             covers all the essential aspects of using TailAdmin, from

@@ -33,6 +33,7 @@ const Installation = () => {
   return (
     <div>
        <TitleHeading
+       emoji="🚀"
           title="Installation"
           description="This part of the documentation will show you how you can install and configure TailAdmin templates. Both Tailwind + AlpineJS and Tailwind + React."
         />

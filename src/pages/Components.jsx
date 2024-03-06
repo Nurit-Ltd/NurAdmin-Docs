@@ -6,7 +6,7 @@ import { components } from "../data/components";
 const Components = () => {
   return (
     <>
-      <TitleHeading title="Components" />
+      <TitleHeading emoji="🥞" title="Components" />
       <div className="w-[828px]">
         <div className="container_fluid">
           <div className="mt-20 space-y-9">
