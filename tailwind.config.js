@@ -16,6 +16,7 @@ export default {
         textPerpel:"#8250df",
         bgPink: "#ffe4e3",
         activeBar: "#346ddbd9",
+        grayXm: "#8899a8"
       },
       fontSize: {
         heading1: "40px",

@@ -1,10 +1,11 @@
-import { GoAlert } from "react-icons/go";
+// import { GoAlert } from "react-icons/go";
+import discord from "../assets/image/discord.ico";
 import range from "../assets/image/favicon.ico";
 
 export const useFullLinkData =[
   {
     id:1,
-    img:<GoAlert/>,
+    img:"",
     description:"Oops! unexpected error while rendering this block",
     post:[
       {
@@ -16,6 +17,7 @@ export const useFullLinkData =[
   {
     id:2,
     img: range,
+    link: "https://tailadmin.com/pricing",
     description:"Pricing | TailAdmin Pro - TailAdmin",
     post:[
       {
@@ -27,6 +29,7 @@ export const useFullLinkData =[
   {
     id:3,
     img: range,
+    link: "https://tailadmin.com/support",
     description:"Support | TailAdmin",
     post:[
       {
@@ -37,7 +40,8 @@ export const useFullLinkData =[
   },
   {
     id:4,
-    img: range,
+    img: discord,
+    link: "https://discord.com/invite/p4EeKnsKw3",
     description:"Join the Pimjo Labs Discord Server!",
     subDes: "Discord",
     post:[
