@@ -1,8 +1,8 @@
-export const updateHtml = [
+export const updateReact = [
   {
     id: 1,
     version: "1.3.0",
-    releaseDate: ["Jan",  2024],
+    releaseDate: ["Jan", 2024],
     newFeatures: [
       {
         id: 1,
@@ -84,67 +84,59 @@ export const updateHtml = [
     enhancements: [
       {
         id: 2,
-        name: "Enhancement 02",
+        name: "Enhancement 01",
         details: "Integrate flatpickr in [Date Picker/Form Elements].",
       },
       {
         id: 3,
-        name: "Enhancement 03",
+        name: "Enhancement 02",
         details:
           "Change color after selecting an option [Select Element/Form Elements].",
       },
       {
         id: 4,
-        name: "Enhancement 04",
+        name: "Enhancement 03",
         details: "Make it functional [Multiselect Dropdown/Form Elements].",
       },
       {
         id: 5,
-        name: "Enhancement 05",
+        name: "Enhancement 04",
         details:
           "Make the best value editable [Pricing Table One/Pricing Table].",
-      },
-      {
-        id: 6,
-        name: "Enhancement 06",
-        details:
-          "Add Default Layout Component and make App/Layout cleaner and use it on every page.",
       },
     ],
   },
   {
     id: 2,
-    version: "1.2.0",
-    releaseDate: ["May", 2023],
-    features: [
-      "Date Picker and Style Enhancements",
-      "Data tables style updated",
-    ],
+    releaseDate: ["March", 2023],
+    features: ["Initial Release"],
   },
   {
     id: 3,
-    version: "1.1.0",
-    releaseDate: ["April", 2023],
-    features: [
-      "New Pro Components",
-      "New Pro Dashboards",
-      "Updated and Improved Data Tables"
-    ]
+    releaseDate: ["May", 2023],
+    features: ["Tweak Date Picker", "Update Page Titles"],
   },
   {
     id: 4,
-    version: "1.1.1",
-    releaseDate: ["June", 6],
-    features: [
-      "Updated packages"
-    ]
+    releaseDate: ["June", 2023],
+    features: ["Update Linking"],
   },
   {
     id: 5,
-    version: "1.0",
-    releaseDate: ["January", 2],
+    releaseDate: ["Jul", 2023],
+    features: ["Converted to TypeScript"],
+  },
+  {
+    id: 6,
+    releaseDate: ["Aug", 2023],
     features: [
-      "Initial Release"
-    ]
-  }
+      "Move components to individual directory",
+      "Update Data Tables style",
+    ],
+  },
+  {
+    id: 7,
+    releaseDate: ["September", 2023],
+    features: ["Migrated Data Tables from simple-datatables to react-table"],
+  },
 ];
