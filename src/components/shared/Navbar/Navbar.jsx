@@ -1,19 +1,28 @@
 import { useState } from "react";
 import { BiSearch } from "react-icons/bi";
+import { Link } from "react-router-dom";
 import Modal from "../Modal";
+
 const Navbar = () => {
   const [openFilterModal, setOpenFilterModal] = useState(false);
+ 
+
   return (
     <nav className="navbarSide h-[80px] px-2 bg-white flex items-center border-b-[1px] fixed top-0 left-0 right-0 z-[999]">
       <div className="w-full flex items-center justify-between">
-        {/* logo */}
-        <div className="pl-4 pr-6 flex items-center gap-4">
-          <div className="w-9 h-9 border bg-white rounded text-center">
-            <span className="text-[25.2px]">T</span>
-          </div>
-          <h3 className=" text-xl text-grayHead font-bold leading-6">
-            TailAdmin Docs
-          </h3>
+        <div className="flex items-center">
+          {/* <GiHamburgerMenu onClick={()=>setShowSide(!showSidebar)} size={25} className="md:hidden" /> */}
+
+          {/* logo */}
+
+          <Link to={"/"} className="pl-4 pr-6 flex items-center gap-4">
+            <div className="w-9 h-9 border bg-white rounded text-center">
+              <span className="text-[25.2px]">T</span>
+            </div>
+            <h3 className=" text-xl text-grayHead font-bold leading-6">
+              TailAdmin Docs
+            </h3>
+          </Link>
         </div>
         <div
           onClick={() => setOpenFilterModal(!openFilterModal)}
@@ -33,9 +42,9 @@ const Navbar = () => {
               </span>
             </div>
           </div>
-          {openFilterModal && <Modal /> }
-            
+          {openFilterModal && <Modal />}
          
+
         </div>
       </div>
     </nav>

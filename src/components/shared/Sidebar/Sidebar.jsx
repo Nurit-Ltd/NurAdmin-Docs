@@ -12,7 +12,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="w-[293px] h-[470px] border-r relative hidden md:block overflow-y-auto">
+    <div className="w-[293px] h-[470px] relative hidden md:block overflow-y-auto">
       <div className="ml-6 py-4  fixed h-[470px] overflow-y-auto">
         {menus.map((menu, index) => (
           <ul key={index} className="">

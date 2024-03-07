@@ -10,7 +10,7 @@ const Layout = () => {
       </header>
       <div className="">
         <main className="w-full flex mt-[80px]">
-           <div>
+           <div className="border-r">
             <Sidebar />
            </div>
 
