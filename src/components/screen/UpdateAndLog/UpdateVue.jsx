@@ -27,10 +27,10 @@ const UpdateVue = () => {
           </div>
           <div className="pb-10">
             <FooterAllPage
-              title1="Introduction"
-              title2="Components"
-              link1="/"
-              link2="/components"
+              title1="Next.js"
+              title2="Useful Links"
+              link1="/update-log/next.js"
+              link2="/use-full-links"
             />
           </div>
         </div>
