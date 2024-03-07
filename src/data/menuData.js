@@ -65,6 +65,17 @@ export const menus = [
     label: "Back to Main Site",
     link: "https://tailadmin.com/",
   },
-
+  
+  
   //-----------------------------
 ];
+export const fixedPart =[
+  
+    {
+      id: 1,
+      label: "Powered By",
+      strong: "GitBook",
+      link: "https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=elP81NpwHRZj7liDLNj1",
+    },
+  
+]

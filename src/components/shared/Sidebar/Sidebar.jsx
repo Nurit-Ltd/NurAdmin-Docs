@@ -1,8 +1,8 @@
 import { useState } from "react";
+import { FaBook } from "react-icons/fa6";
 import { MdKeyboardArrowDown, MdKeyboardArrowRight } from "react-icons/md";
-// import { TbHash } from "react-icons/tb";
 import { Link } from "react-router-dom";
-import { menus } from "../../../data/menuData";
+import { fixedPart, menus } from "../../../data/menuData";
 
 const Sidebar = () => {
   const [openMenuIndex, setOpenMenuIndex] = useState(null);
@@ -12,8 +12,8 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="w-[293px] h-full border-r hidden md:block">
-      <div className="ml-6 py-4  fixed h-screen   overflow-y-auto">
+    <div className="w-[293px] h-[470px] border-r relative hidden md:block overflow-y-auto">
+      <div className="ml-6 py-4  fixed h-[470px] overflow-y-auto">
         {menus.map((menu, index) => (
           <ul key={index} className="">
             <li className="sidebar flex items-center  justify-between">
@@ -55,6 +55,15 @@ const Sidebar = () => {
           </ul>
         ))}
       </div>
+       {fixedPart.map((item)=>(
+        <Link key={item.id} to={item.link} className="fixed cursor-pointer left-0 bottom-0 w-[293px] h-[60px] px-4 pb-4 mb-4">
+        <div className="w-full h-[60px] bg-grayFix p-4 flex items-center gap-4 ">
+        <FaBook size={24} className="text-headingText"/>
+         <p className="text-sm text-grayPrimary leading-5 ">{item.label} <span className="font-bold">{item.strong}</span></p>
+        </div>
+      </Link>
+       ))}
+      
     </div>
   );
 };
