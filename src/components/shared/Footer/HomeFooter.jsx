@@ -1,4 +1,5 @@
 import { GoArrowRight } from "react-icons/go";
+import { Link } from "react-router-dom";
 import happy from "../../../assets/icon/happy.svg";
 import sad from "../../../assets/icon/sad.svg";
 import stop from "../../../assets/icon/stop.svg";
@@ -8,7 +9,7 @@ const HomeFooter = () => {
     <div className="container_fluid">
       <div>
         <div className="pt-6">
-          <div className="w-full border p-4 flex items-center justify-between text-grayPrimary hover:text-blueActive focus:text-blueActive footer_bar duration-200">
+          <Link to={'/installation'} className="w-full border p-4 flex items-center justify-between text-grayPrimary hover:text-blueActive focus:text-blueActive footer_bar duration-200">
             <div>
               <p className="text-xs text-grayPrimary leading-[18px]">Next</p>
               <h4 className="font-medium">Installation</h4>
@@ -16,7 +17,7 @@ const HomeFooter = () => {
             <div>
               <GoArrowRight className="w-6 h-6" />
             </div>
-          </div>
+          </Link>
         </div>
         <div className="mt-6 pt-6 border-t  flex items-center justify-between">
           <div className="text-sm text-grayPrimary font-normal leading-[22px]">

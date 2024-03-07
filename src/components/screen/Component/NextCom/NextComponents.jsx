@@ -75,10 +75,10 @@ const NextComponents = () => {
 
           <div className="pb-10">
             <FooterAllPage
-              title1="Introduction"
-              title2="Components"
-              link1="/"
-              link2="/components"
+              title1="React.js Components"
+              title2="Vue.js Components"
+              link1="/components/react-components"
+              link2="/components/vue-components"
             />
           </div>
         </div>

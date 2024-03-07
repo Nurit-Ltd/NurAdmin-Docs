@@ -63,10 +63,10 @@ const UpdateNext = () => {
           </div>
           <div className="pb-10">
             <FooterAllPage
-              title1="Introduction"
-              title2="Components"
-              link1="/"
-              link2="/components"
+              title1="React"
+              title2="Vue.js"
+              link1="/update-log/react"
+              link2="/update-log/vue"
             />
           </div>
         </div>

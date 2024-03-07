@@ -77,10 +77,10 @@ import BreadcrumbDefault from '@/components/Breadcrumbs/BreadcrumbDefault.vue'
 
           <div className="pb-10">
             <FooterAllPage
-              title1="Introduction"
-              title2="Components"
-              link1="/"
-              link2="/components"
+              title1="Next.js Components"
+              title2="Customization"
+              link1="/components/next-components"
+              link2="/customization"
             />
           </div>
         </div>

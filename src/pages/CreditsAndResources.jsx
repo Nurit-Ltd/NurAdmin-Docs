@@ -19,10 +19,10 @@ const CreditsAndResources = () => {
               <CreditsSide />
           <div className="pb-10">
             <FooterAllPage
-              title1="Introduction"
-              title2="Components"
-              link1="/"
-              link2="/components"
+              title1="Customization"
+              title2="Update Logs"
+              link1="/customization"
+              link2="/update-log"
             />
           </div>
         </div>

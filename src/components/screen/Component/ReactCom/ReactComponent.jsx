@@ -76,10 +76,10 @@ const ReactComponent = () => {
 
           <div className="pb-10">
             <FooterAllPage
-              title1="Introduction"
-              title2="Components"
-              link1="/"
-              link2="/components"
+              title1="HTML Components"
+              title2="Next.js Components"
+              link1="/components/html-components"
+              link2="/components/next-components"
             />
           </div>
         </div>

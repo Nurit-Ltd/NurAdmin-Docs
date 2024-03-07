@@ -64,10 +64,10 @@ const UpdateReact = () => {
           </div>
           <div className="pb-10">
             <FooterAllPage
-              title1="Introduction"
-              title2="Components"
-              link1="/"
-              link2="/components"
+              title1="HTML"
+              title2="Next.js"
+              link1="/update-log/html"
+              link2="/update-log/next.js"
             />
           </div>
         </div>

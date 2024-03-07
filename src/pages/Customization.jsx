@@ -61,10 +61,10 @@ const Customization = () => {
 
           <div className="pb-10">
             <FooterAllPage
-              title1="Introduction"
-              title2="Components"
-              link1="/"
-              link2="/components"
+              title1="Vue.js Components"
+              title2="Credits and Resources"
+              link1="/components/vue-components"
+              link2="/credit-resources"
             />
           </div>
         </div>

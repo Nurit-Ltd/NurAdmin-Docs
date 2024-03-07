@@ -64,10 +64,10 @@ const UpdateHtml = () => {
           </div>
           <div className="pb-10">
             <FooterAllPage
-              title1="Introduction"
-              title2="Components"
-              link1="/"
-              link2="/components"
+              title1="Update Logs"
+              title2="React"
+              link1="/update-log"
+              link2="/update-log/react"
             />
           </div>
         </div>

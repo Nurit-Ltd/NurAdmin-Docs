@@ -25,10 +25,10 @@ const UpdateLog = () => {
           </div>
           <div className="pb-10">
             <FooterAllPage
-              title1="Installation"
-              title2="HTML Components"
-              link1="/installation"
-              link2="/components/html-components"
+              title1="Credits and Resources"
+              title2="HTML"
+              link1="/credit-resources"
+              link2="/update-log/html"
             />
           </div>
         </div>
