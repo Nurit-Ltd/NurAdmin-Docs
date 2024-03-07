@@ -10,7 +10,7 @@ const CopyText = ({ textToCopy }) => {
       .then(() => {
         console.log('Text copied to clipboard');
         setShowModal(true);
-        setTimeout(() => setShowModal(false), 2000); // Close modal after 2 seconds
+        setTimeout(() => setShowModal(false), 2000); 
       })
       .catch((error) => {
         console.error('Error copying text: ', error);
