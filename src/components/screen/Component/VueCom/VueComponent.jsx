@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import CopyText from "../../../shared/CopyText";
+import ReactMarkdown from "react-markdown";
+import CopyToClip from "../../../shared/CopyToClip";
 import FooterAllPage from "../../../shared/Footer/FooterAllPage";
 import TitleHeading from "../../../shared/TitleHeading";
 import VueAccordion from "./VueAccordion";
@@ -29,6 +30,14 @@ const VueComponent = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const markdown = `
+  \`\`\`
+  <script setup lang="ts">
+import BreadcrumbDefault from '@/components/Breadcrumbs/BreadcrumbDefault.vue'
+</script>
+  \`\`\`
+  `;
   return (
     <>
       <TitleHeading
@@ -42,17 +51,14 @@ const VueComponent = () => {
           <div>
             <div className="space-y-3 pt-9 text-headingText leading-6">
               <p>
-              To use the Vue.js components first you’ll have to import them.
+                To use the Vue.js components first you’ll have to import them.
               </p>
               <p>You can do that easily by following this command.</p>
             </div>
-            <div className="my-5 py-2 pl-5 pr-2 w-full h-[38px] flex items-center justify-between bg-bgBluer group ">
-              <p className="text-xs text-textPerpel font-medium leading-[22px]">
-                npm <span className="text-headingText">run start</span>
-              </p>
-
-              <div className="opacity-0 group-hover:opacity-100 duration-300">
-                <CopyText textToCopy="npm run start" />
+            <div className="mt-8 w-full relative">
+              <div className="group  px-4 py-2 bg-bgBluer overflow-x-auto">
+                <ReactMarkdown>{markdown}</ReactMarkdown>
+                <CopyToClip markdown={markdown} />
               </div>
             </div>
             <h5 className="font-bold text-blueIcon leading-6">
@@ -60,13 +66,13 @@ const VueComponent = () => {
             </h5>
           </div>
           <section id="section1">
-             <VueBreadCum />
+            <VueBreadCum />
           </section>
           <section id="section2">
-             <VueArts />
+            <VueArts />
           </section>
           <section id="section3">
-              <VueAccordion />
+            <VueAccordion />
           </section>
 
           <div className="pb-10">
@@ -91,7 +97,7 @@ const VueComponent = () => {
               }`}
             >
               <a href="#section1" className="ml-2">
-              Breadcrumb:
+                Breadcrumb:
               </a>
             </li>
             <li
@@ -102,7 +108,7 @@ const VueComponent = () => {
               }`}
             >
               <a href="#section2" className="ml-2">
-              Alerts:
+                Alerts:
               </a>
             </li>
             <li
@@ -113,7 +119,7 @@ const VueComponent = () => {
               }`}
             >
               <a href="#section3" className="ml-2">
-              Accordion:
+                Accordion:
               </a>
             </li>
           </ul>
