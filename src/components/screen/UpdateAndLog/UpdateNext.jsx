@@ -9,7 +9,7 @@ const UpdateNext = () => {
         title="Next.js"
         description="Update Logs for TailAdmin Next.js version"
       />
-      <div className="w-[828px]">
+      <div className="w-auto xl:w-[828px]">
         <div className="container_fluid">
           <div className="pt-12 pb-20">
             {updateNext.slice(0, 1).map((update) => (

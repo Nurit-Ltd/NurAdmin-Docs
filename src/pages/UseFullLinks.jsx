@@ -11,7 +11,7 @@ const UseFullLinks = () => {
         emoji="🔗"
         title="Useful Links"
       />
-      <div className="w-[828px]">
+      <div className="w-auto xl:w-[828px]">
         <div className="container_fluid">
              <UseFullLInk />
           <div className="pb-10">
