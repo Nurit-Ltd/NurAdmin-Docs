@@ -11,7 +11,7 @@ const UpdateLog = () => {
         description="Update logs of TailAdmin"
         title="Update Logs"
       />
-      <div className="w-[828px]">
+      <div className="w-auto xl:w-[828px]">
         <div className="container_fluid">
           <div className="mt-20 pb-25 flex flex-wrap gap-4">
             {updateAndLog.map((language) => (

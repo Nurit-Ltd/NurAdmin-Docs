@@ -7,7 +7,7 @@ const Components = () => {
   return (
     <>
       <TitleHeading emoji="🥞" title="Components" />
-      <div className="w-[828px]">
+      <div className="w-auto xl:w-[828px]">
         <div className="container_fluid">
           <div className="mt-20 space-y-9">
             {components.map((language) => (

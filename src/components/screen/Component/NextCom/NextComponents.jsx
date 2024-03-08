@@ -44,7 +44,7 @@ const NextComponents = () => {
         description="TailAdmin: Next.js + Tailwind offer more than 200 dashboard UI components. You can use them to build ReactJS + Tailwind CSS dashboard templates easily..
           "
       />
-      <div className="w-[828px] relative">
+      <div className="w-auto md:w-[474px] lg:w-[730px] xl:w-[828px] relative">
         <div className="container_fluid">
           <div>
             <div className="space-y-3 pt-9 text-headingText leading-6">
