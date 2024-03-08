@@ -9,7 +9,7 @@ const Layout = () => {
         <Navbar />
       </header>
       <div className="">
-        <main className="w-full flex mt-[80px]">
+        <main className="w-full flex mt-[64px] md:mt-[80px]">
            <div className="border-r">
             <Sidebar />
            </div>
