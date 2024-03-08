@@ -30,7 +30,7 @@ const TitleHeading = ({ emoji, title, description }) => {
 
   return (
     <div className="relative">
-      <div className="w-[828px] overflow-hidden">
+      <div className="w-auto xl:w-[828px] overflow-hidden">
         <div className="pt-10">
           <div className="">
             <div className="flex justify-between pr-10">
