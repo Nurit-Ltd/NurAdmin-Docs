@@ -7,10 +7,10 @@ import stop from "../../../assets/icon/stop.svg";
 const FooterAllPage = ({ title1, title2, link1, link2 }) => {
   return (
     <div>
-      <div className="pt-10 w-full flex items-center gap-4">
+      <div className="pt-10 w-full flex flex-col xl:flex-row items-center gap-4">
         <Link
           to={link1}
-          className="w-1/2 border p-4 flex items-center justify-between text-grayPrimary hover:text-blueActive focus:text-blueActive footer_bar duration-200"
+          className="w-full xl:w-1/2 border p-4 flex items-center justify-between text-grayPrimary hover:text-blueActive focus:text-blueActive footer_bar duration-200"
         >
           <div>
             <GoArrowLeft className="w-6 h-6" />
@@ -23,7 +23,7 @@ const FooterAllPage = ({ title1, title2, link1, link2 }) => {
         </Link>
         <Link
           to={link2}
-          className="w-1/2 border p-4 flex items-center justify-between text-grayPrimary hover:text-blueActive focus:text-blueActive footer_bar duration-200"
+          className="w-full xl:w-1/2 border p-4 flex items-center justify-between text-grayPrimary hover:text-blueActive focus:text-blueActive footer_bar duration-200"
         >
           <div>
             <p className="text-xs text-grayPrimary leading-[18px]">Next</p>
@@ -34,7 +34,7 @@ const FooterAllPage = ({ title1, title2, link1, link2 }) => {
           </div>
         </Link>
       </div>
-      <div className="mt-6 pt-6 border-t  flex items-center justify-between">
+      <div className="mt-6 pt-6 border-t  flex flex-col xl:flex-row items-center xl:items-center justify-center xl:justify-between ">
         <div className="text-sm text-grayPrimary font-normal leading-[22px]">
           Last modified 24d ago
         </div>

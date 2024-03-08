@@ -3,7 +3,7 @@ import CopyText from "../../shared/CopyText";
 
 const VueJsAdmin = () => {
   return (
-    <div className="w-[828px]">
+    <div className="w-auto xl:w-[828px]">
       <div className="container_fluid">
         <div className="pt-20">
           <div className="pb-2">
@@ -18,7 +18,7 @@ const VueJsAdmin = () => {
             </p>
             <p>Follow these steps to install the template:</p>
             <p>
-              <span className="font-bold">Note:</span> We've utilized
+              <span className="font-bold">Note:</span> We ve utilized
               <span className="font-bold"> Vite </span> as build tool for
               TailAdmin Vue.
             </p>

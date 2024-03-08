@@ -4,7 +4,7 @@ import CopyText from "../../shared/CopyText";
 
 const ReactAdmin = () => {
   return (
-    <div className="w-[828px]">
+    <div className="w-auto xl:w-[828px]">
       <div className="container_fluid">
         <div className="pt-20">
           <div className="pb-2">
