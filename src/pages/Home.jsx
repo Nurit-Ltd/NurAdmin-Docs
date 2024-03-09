@@ -20,9 +20,11 @@ const Home = () => {
             covers all the essential aspects of using TailAdmin, from
             installation and usage to customization and exploring features."
       />
-      <div className="max-w-[828px] pb-10">
+      <div className="w-auto lg:w-[723px] xl:w-[979px] pb-10">
+        <div className="container_fluid">
         <AdminCard />
         <HomeFooter />
+        </div>
       </div>
     </div>
   );

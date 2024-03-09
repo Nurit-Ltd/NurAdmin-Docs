@@ -29,13 +29,13 @@ const TitleHeading = ({ emoji, title, description }) => {
   }, [showModal]);
 
   return (
-    <div className="relative">
-      <div className="w-auto xl:w-[828px] overflow-hidden">
+    <div className="relative w-auto lg:w-[723px] xl:w-[979px]">
+      <div className="container_fluid">
         <div className="pt-10">
           <div className="">
             <div className="flex justify-between pr-10">
               <div className="flex items-center">
-                <span className="pr-3 text-xl">{emoji}</span>
+                {/* <span className="pr-3 text-xl">{emoji}</span> */}
                 <h2 className="text-heading1 text-headingText font-bold leading-[48px] ">
                   {title}
                 </h2>
@@ -71,9 +71,7 @@ const TitleHeading = ({ emoji, title, description }) => {
               </div>
             </div>
           </div>
-          <div className="max-w-[828px] pt-4">
-            <p className="mx-10 text-grayPrimary">{description}</p>
-          </div>
+          <p className="pt-4 text-grayPrimary">{description}</p>
         </div>
       </div>
     </div>

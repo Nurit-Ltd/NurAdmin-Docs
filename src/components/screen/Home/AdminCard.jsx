@@ -3,7 +3,7 @@ import { AdminCardData } from "../../../data/AdminCardData";
 
 const AdminCard = () => {
   return (
-    <div className="container_fluid">
+    <div>
       {AdminCardData.map((cardItem) => (
         <div key={cardItem.id}>
           <div className="py-4">
