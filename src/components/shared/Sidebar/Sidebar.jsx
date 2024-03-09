@@ -17,24 +17,31 @@ const Sidebar = () => {
       <div className="w-[293px] h-[470px]  hidden md:block overflow-y-auto">
         <div className="ml-6 py-4  fixed  md:h-[360px] xl:h-[470px] overflow-y-auto">
           {menus.map((menu, index) => (
-            <ul key={index} className="">
-              <li className={`sidebar flex items-center   justify-between ${location.pathname === menu.link ? "bg-activeBg" :" hover:bg-hoverBg duration-200"}`}>
-                <Link to={menu.link} className="flex items-center gap-4">
-                  <span>{menu.emoji}</span>{" "}
-                  <span className={` text-sm leading-[22px] ${location.pathname === menu.link ? "text-blueActive font-bold" :"text-grayMenu "}`}>
-                    {menu.label}
-                  </span>
+            <div key={index} className="">
+             
+                <Link
+                  to={menu.link}
+                  className={`sidebar flex items-center justify-between gap-4   text-sm leading-[22px] ${
+                    location.pathname === menu.link
+                      ? "text-blueActive bg-activeBg font-bold"
+                      : "text-grayMenu hover:bg-hoverBg duration-200"
+                  }`}
+                >
+                  <div className=" flex items-center gap-3 ">
+                    <span>{menu.emoji}</span>
+                    <span>{menu.label}</span>
+                  </div>
+                  {menu.submenus && (
+                    <span onClick={() => toggleMenu(index)}>
+                      {openMenuIndex === index ? (
+                        <MdKeyboardArrowDown className="w-[18px] h-[18px] text-blueActive" />
+                      ) : (
+                        <MdKeyboardArrowRight className="w-[18px] h-[18px]" />
+                      )}
+                    </span>
+                  )}
                 </Link>
-                {menu.submenus && (
-                  <span onClick={() => toggleMenu(index)}>
-                    {openMenuIndex === index ? (
-                      <MdKeyboardArrowDown className="w-[18px] h-[18px] text-blueActive" />
-                    ) : (
-                      <MdKeyboardArrowRight className="w-[18px] h-[18px]" />
-                    )}
-                  </span>
-                )}
-              </li>
+             
               {openMenuIndex === index && (
                 <div className="ml-2 mt-1 mb-2">
                   <div className="border-l">
@@ -43,7 +50,11 @@ const Sidebar = () => {
                         <Link
                           to={submenu.link}
                           key={subIndex}
-                          className={`gap-3 w-[228px] h-8 flex items-center  px-2  ${location.pathname === submenu.link ? "text-blueActive bg-activeBg font-bold" :"text-grayMenu hover:bg-hoverBg duration-200 "}`}
+                          className={`gap-3 w-[244px] h-8 flex items-center  px-2  ${
+                            location.pathname === submenu.link
+                              ? "text-blueActive bg-activeBg font-bold"
+                              : "text-grayMenu hover:bg-hoverBg duration-200 "
+                          }`}
                         >
                           <span> {submenu.img}</span>
 
@@ -54,26 +65,26 @@ const Sidebar = () => {
                   </div>
                 </div>
               )}
-            </ul>
+            </div>
           ))}
         </div>
       </div>
 
       <div>
-      {fixedPart.map((item) => (
-        <Link
-          key={item.id}
-          to={item.link}
-          className=" fixed left-0 bottom-0 w-[293px] h-[60px] px-4 pb-4 mb-4 cursor-pointer hidden md:block"
-        >
-          <div className="w-full h-[60px] bg-grayFix p-4 flex items-center gap-4 ">
-            <FaBook size={24} className="text-headingText" />
-            <p className="text-sm text-grayPrimary leading-5 ">
-              {item.label} <span className="font-bold">{item.strong}</span>
-            </p>
-          </div>
-        </Link>
-      ))}
+        {fixedPart.map((item) => (
+          <Link
+            key={item.id}
+            to={item.link}
+            className=" fixed left-0 bottom-0 w-[293px] h-[60px] px-4 pb-4 mb-4 cursor-pointer hidden md:block"
+          >
+            <div className="w-full h-[60px] bg-grayFix p-4 flex items-center gap-4 ">
+              <FaBook size={24} className="text-headingText" />
+              <p className="text-sm text-grayPrimary leading-5 ">
+                {item.label} <span className="font-bold">{item.strong}</span>
+              </p>
+            </div>
+          </Link>
+        ))}
       </div>
     </div>
   );
