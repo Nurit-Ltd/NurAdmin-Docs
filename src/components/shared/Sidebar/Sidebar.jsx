@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { FaBook } from "react-icons/fa6";
 import { MdKeyboardArrowDown, MdKeyboardArrowRight } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { fixedPart, menus } from "../../../data/menuData";
 
 const Sidebar = () => {
+  const location = useLocation();
   const [openMenuIndex, setOpenMenuIndex] = useState(null);
 
   const toggleMenu = (index) => {
@@ -17,10 +18,10 @@ const Sidebar = () => {
         <div className="ml-6 py-4  fixed  md:h-[360px] xl:h-[470px] overflow-y-auto">
           {menus.map((menu, index) => (
             <ul key={index} className="">
-              <li className="sidebar flex items-center  justify-between">
+              <li className={`sidebar flex items-center   justify-between ${location.pathname === menu.link ? "bg-activeBg" :" hover:bg-hoverBg duration-200"}`}>
                 <Link to={menu.link} className="flex items-center gap-4">
                   <span>{menu.emoji}</span>{" "}
-                  <span className="text-sm text-grayMenu leading-[22px]">
+                  <span className={` text-sm leading-[22px] ${location.pathname === menu.link ? "text-blueActive font-bold" :"text-grayMenu "}`}>
                     {menu.label}
                   </span>
                 </Link>
@@ -37,12 +38,12 @@ const Sidebar = () => {
               {openMenuIndex === index && (
                 <div className="ml-2 mt-1 mb-2">
                   <div className="border-l">
-                    <ul className="pl-2">
+                    <ul className="pl-2 space-y-1">
                       {menu.submenus.map((submenu, subIndex) => (
                         <Link
                           to={submenu.link}
                           key={subIndex}
-                          className=" gap-3 w-[228px] h-8 flex items-center  px-2 text-gray-800 hover:bg-gray-200 "
+                          className={`gap-3 w-[228px] h-8 flex items-center  px-2  ${location.pathname === submenu.link ? "text-blueActive bg-activeBg font-bold" :"text-grayMenu hover:bg-hoverBg duration-200 "}`}
                         >
                           <span> {submenu.img}</span>
 

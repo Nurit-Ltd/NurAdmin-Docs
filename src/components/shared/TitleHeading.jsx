@@ -52,7 +52,7 @@ const TitleHeading = ({ emoji, title, description }) => {
                   <PiDotsThreeVerticalBold  />
                 </div>
                 {showModal && (
-                  <div className="modal bg-white shadow-md w-[244px] h-[92px] border rounded absolute top-[60px] left-[-20px] py-2 z-[999]">
+                  <div className="modal bg-white shadow-md w-[244px] h-[92px] border rounded absolute top-[60px] xl1:left-0 right-0  py-2 z-[999]">
                     <div className="h-[38px] flex items-center mx-2 py-1 hover:bg-gray-100">
                       <div className="pr-3">
                         <AiOutlineLink className="w-[34px] h-[18px] text-right text-blueIcon" />

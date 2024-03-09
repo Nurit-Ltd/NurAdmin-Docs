@@ -22,7 +22,9 @@ export default {
         bgPink: "#ffe4e3",
         activeBar: "#346ddbd9",
         grayXm: "#8899a8",
-        grayFix:"#eceff1"
+        grayFix:"#eceff1",
+        activeBg: "#85a3e01a",
+        hoverBg: "#f7f7f7"
       },
       fontSize: {
         heading1: "40px",
