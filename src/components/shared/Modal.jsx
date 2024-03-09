@@ -3,7 +3,7 @@ import { IoSearchOutline } from "react-icons/io5";
 const Modal = () => {
   return (
     <div
-      className="backdrop pt-[80px] pl:[20px] md:pl-[160px] xl:pl-[250px] 2xl:pl-[360px] bg-black bg-opacity-50 overflow-x-hidden 
+      className="backdrop pt-[80px] pl:[20px]  lg:pl-[100px] xl:pl-[250px] 2xl:pl-[360px] bg-black bg-opacity-50 overflow-x-hidden 
                 overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
     >
       <div
