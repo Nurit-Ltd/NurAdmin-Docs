@@ -55,15 +55,22 @@ const Sidebar = () => {
           </ul>
         ))}
       </div>
-       {fixedPart.map((item)=>(
-        <Link key={item.id} to={item.link} className="fixed cursor-pointer left-0 bottom-0 w-[293px] h-[60px] px-4 pb-4 mb-4">
-        <div className="w-full h-[60px] bg-grayFix p-4 flex items-center gap-4 ">
-        <FaBook size={24} className="text-headingText"/>
-         <p className="text-sm text-grayPrimary leading-5 ">{item.label} <span className="font-bold">{item.strong}</span></p>
-        </div>
-      </Link>
-       ))}
-      
+      <div>
+        {fixedPart.map((item) => (
+          <Link
+            key={item.id}
+            to={item.link}
+            className="fixed cursor-pointer left-0 bottom-0 w-[293px] h-[60px] px-4 pb-4 mb-4"
+          >
+            <div className="w-full h-[60px] bg-grayFix p-4 flex items-center gap-4 ">
+              <FaBook size={24} className="text-headingText" />
+              <p className="text-sm text-grayPrimary leading-5 ">
+                {item.label} <span className="font-bold">{item.strong}</span>
+              </p>
+            </div>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 };
