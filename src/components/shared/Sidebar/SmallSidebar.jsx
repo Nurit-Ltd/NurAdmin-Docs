@@ -12,11 +12,12 @@ const SmallSidebar = ({setShowSide,showSidebar}) => {
   };
 
   return (
-    <div className="w-[293px] h-[470px] relative  md:hidden overflow-y-auto">
-      <div className="ml-6 py-4  fixed h-[470px] overflow-y-auto">
+    <div className="relative">
+    <div className="w-[293px] h-screen relative md:hidden">
+      <div className="ml-6 py-4 fixed h-[370px] overflow-y-auto">
         {menus.map((menu, index) => (
           <ul key={index} className="">
-            <li className="sidebar flex items-center  justify-between">
+            <li className="smallSidebar flex items-center  justify-between">
               <Link onClick={() => setShowSide(!showSidebar)} to={menu.link} className="w-full flex items-center gap-4">
                 <span>{menu.emoji}</span>{" "}
                 <span className="text-sm text-grayMenu leading-[22px]">
@@ -56,15 +57,22 @@ const SmallSidebar = ({setShowSide,showSidebar}) => {
           </ul>
         ))}
       </div>
-       {fixedPart.map((item)=>(
-        <Link key={item.id} to={item.link} className="hidden md:block fixed cursor-pointer left-0 bottom-0 w-[293px] h-[60px] px-4 pb-4 mb-4">
-        <div className="w-full h-[60px] bg-grayFix p-4 flex items-center gap-4 ">
-        <FaBook size={24} className="text-headingText"/>
-         <p className="text-sm text-grayPrimary leading-5 ">{item.label} <span className="font-bold">{item.strong}</span></p>
-        </div>
-      </Link>
-       ))}
+      {fixedPart.map((item) => (
+        <Link
+          key={item.id}
+          to={item.link}
+          className=" absolute left-0 bottom-[60px] w-[293px] h-[60px] px-4 pb-4 mb-4 cursor-pointer md:hidden"
+        >
+          <div className="w-full h-[60px] bg-grayFix p-4 flex items-center gap-4 ">
+            <FaBook size={24} className="text-headingText" />
+            <p className="text-sm text-grayPrimary leading-5 ">
+              {item.label} <span className="font-bold">{item.strong}</span>
+            </p>
+          </div>
+        </Link>
+      ))}
       
+    </div>
     </div>
   );
 };

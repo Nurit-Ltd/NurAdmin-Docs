@@ -27,6 +27,19 @@ body {
   display: flex;
   align-items: center;
 }
+.smallSidebar {
+  width: 260px;
+  height: 32px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-right: 8px;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+}
+.smallSidebar:hover {
+  background: #f7f7f7;
+}
 .sidebar:hover {
   background: #f7f7f7;
 }

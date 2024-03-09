@@ -14,11 +14,11 @@ const Sidebar = () => {
   return (
     <div className="relative">
       <div className="w-[293px] h-[470px]  hidden md:block overflow-y-auto">
-        <div className="ml-6 py-4  fixed w-full md:h-[360px] xl:h-[470px] overflow-y-auto">
+        <div className="ml-6 py-4  fixed  md:h-[360px] xl:h-[470px] overflow-y-auto">
           {menus.map((menu, index) => (
             <ul key={index} className="">
               <li className="sidebar flex items-center  justify-between">
-                <Link to={menu.link} className="w-full flex items-center gap-4">
+                <Link to={menu.link} className="flex items-center gap-4">
                   <span>{menu.emoji}</span>{" "}
                   <span className="text-sm text-grayMenu leading-[22px]">
                     {menu.label}
@@ -63,7 +63,7 @@ const Sidebar = () => {
         <Link
           key={item.id}
           to={item.link}
-          className=" fixed left-0 bottom-0 w-[293px] h-[60px] px-4 pb-4 mb-4 cursor-pointer"
+          className=" fixed left-0 bottom-0 w-[293px] h-[60px] px-4 pb-4 mb-4 cursor-pointer hidden md:block"
         >
           <div className="w-full h-[60px] bg-grayFix p-4 flex items-center gap-4 ">
             <FaBook size={24} className="text-headingText" />

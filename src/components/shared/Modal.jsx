@@ -3,12 +3,12 @@ import { IoSearchOutline } from "react-icons/io5";
 const Modal = () => {
   return (
     <div
-      className="backdrop pt-[80px] md:pl-[160px] xl:pl-[250px] 2xl:pl-[360px] bg-black bg-opacity-50 overflow-x-hidden 
+      className="backdrop pt-[80px] pl:[20px] md:pl-[160px] xl:pl-[250px] 2xl:pl-[360px] bg-black bg-opacity-50 overflow-x-hidden 
                 overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="w-[785px] h-[98px] border rounded bg-[#ffffff]"
+        className="max-w-[785px] mx-2 h-[98px] border rounded bg-[#ffffff]"
       >
         <div className="w-full h-[52px] px-6 flex items-center">
           <IoSearchOutline />

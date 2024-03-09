@@ -30,18 +30,19 @@ const Navbar = () => {
               </h3>
             </Link>
           </div>
+           {/* small screen search */}
           <div
             className="pr-2 md:hidden"
             onClick={() => setOpenFilterModal(!openFilterModal)}
           >
             <BiSearch size={17} />
+            {openFilterModal && <Modal />}
           </div>
+          {/* large screen */}
           <div
             onClick={() => setOpenFilterModal(!openFilterModal)}
             className="hidden md:block w-[233px] h-9  pl-6 pr-2 cursor-pointer"
           >
-            {/* small screen search */}
-
             <div className="pl-4 pr-2 w-[201px] h-9 bg-gray-200 flex items-center justify-between rounded">
               <div className="flex items-center gap-2">
                 <BiSearch />
