@@ -3,7 +3,7 @@ import CopyText from "../../shared/CopyText";
 
 const VueJsAdmin = () => {
   return (
-    <div className="w-auto xl:w-[828px]">
+    <div className="w-auto lg:w-[723px] xl:w-[979px] xl1:w-[919px] 2xl:w-[1015px] 3xl:w-[1079px] 4xl:w-[1200px]">
       <div className="container_fluid">
         <div className="pt-20">
           <div className="pb-2">

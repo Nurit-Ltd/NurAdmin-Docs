@@ -36,7 +36,7 @@ const HtmlComponent = () => {
         description="TailAdmin HTML: Tailwind + Alpine.js has more than 200 components, and you can use them to build any kind of dashboard you need.
           "
       />
-      <div className="w-auto md:w-[474px] lg:w-[730px] xl:w-[828px] relative">
+      <div className="w-auto lg:w-[723px] xl:w-[979px] xl1:w-[919px] 2xl:w-[1015px] 3xl:w-[1079px] 4xl:w-[1200px] relative">
         <div className="container_fluid">
           <h5 className="pt-12 font-bold text-blueIcon leading-6">
             Here are a few examples of the components:

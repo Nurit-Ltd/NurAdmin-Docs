@@ -33,15 +33,16 @@ const TitleHeading = ({ emoji, title, description }) => {
       <div className="container_fluid">
         <div className="pt-10">
           <div className="">
-            <div className="flex items-center justify-between pr-10 relative">
+            <div className="flex items-center justify-between pr-5 relative">
               <div className="flex items-center">
-                <span className="absolute left-[-30px] lg:left-[-40px] text-xl">{emoji}</span>
-                <h2 className="text-heading1 text-headingText font-bold leading-[48px] ">
+                <span className="absolute hidden md:block left-[-30px] lg:left-[-40px] text-xl">{emoji}</span>
+                <h2 className="text-[32px] lg:text-heading1 text-headingText font-bold leading-[48px] flex items-center">
+                  <span className="text-xl pr-2 md:hidden">{emoji}</span>
                   {title}
                 </h2>
               </div>
 
-              <div className="" ref={modalRef}>
+              <div className="relative" ref={modalRef}>
                 <div
                   onClick={toggleModal}
                   className={`w-10 h-10 cursor-pointer flex items-center justify-center bg-white  rounded-full hover:bg-blue-100 duration-200 ${
@@ -51,7 +52,7 @@ const TitleHeading = ({ emoji, title, description }) => {
                   <PiDotsThreeVerticalBold  />
                 </div>
                 {showModal && (
-                  <div className="modal bg-white shadow-md w-[244px] h-[92px] border rounded absolute top-[90px]  right-[65px] py-2 z-[999]">
+                  <div className="modal bg-white shadow-md w-[244px] h-[92px] border rounded absolute top-[60px] left-[-20px] py-2 z-[999]">
                     <div className="h-[38px] flex items-center mx-2 py-1 hover:bg-gray-100">
                       <div className="pr-3">
                         <AiOutlineLink className="w-[34px] h-[18px] text-right text-blueIcon" />
