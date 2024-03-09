@@ -29,13 +29,13 @@ const TitleHeading = ({ emoji, title, description }) => {
   }, [showModal]);
 
   return (
-    <div className="relative w-auto lg:w-[723px] xl:w-[979px]">
+    <div className="relative w-auto lg:w-[723px] xl:w-[979px] xl1:w-[919px] 2xl:w-[1015px] 3xl:w-[1079px] 4xl:w-[1200px]">
       <div className="container_fluid">
         <div className="pt-10">
           <div className="">
-            <div className="flex justify-between pr-10">
+            <div className="flex items-center justify-between pr-10 relative">
               <div className="flex items-center">
-                {/* <span className="pr-3 text-xl">{emoji}</span> */}
+                <span className="absolute left-[-30px] lg:left-[-40px] text-xl">{emoji}</span>
                 <h2 className="text-heading1 text-headingText font-bold leading-[48px] ">
                   {title}
                 </h2>

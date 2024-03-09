@@ -3,6 +3,11 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        'xl1': '1440px',
+        '3xl':'1600px',
+        '4xl': '1920px'
+      },
       colors: {
         grayHead: "#3B454E",
         grayMenu: "#5c6975",

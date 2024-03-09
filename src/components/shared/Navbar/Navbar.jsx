@@ -8,7 +8,7 @@ import SmallSidebar from "../Sidebar/SmallSidebar";
 
 const Navbar = () => {
   const [openFilterModal, setOpenFilterModal] = useState(false);
-  const [showSidebar, setShowSide] = useState(false);
+  const [showSidebar, setShowSidebar] = useState(false);
 
   return (
     <div className="fixed top-0 left-0 right-0 z-[999]">
@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="w-full flex items-center justify-between">
           <div className="flex items-center">
             <GiHamburgerMenu
-              onClick={() => setShowSide(!showSidebar)}
+              onClick={() => setShowSidebar(!showSidebar)}
               size={18}
               className="md:hidden"
             />
@@ -30,7 +30,7 @@ const Navbar = () => {
               </h3>
             </Link>
           </div>
-           {/* small screen search */}
+          {/* small screen search */}
           <div
             className="pr-2 md:hidden"
             onClick={() => setOpenFilterModal(!openFilterModal)}
@@ -60,28 +60,40 @@ const Navbar = () => {
             {openFilterModal && <Modal />}
           </div>
         </div>
-        <div
-          className={
-            showSidebar
-              ? "fixed z-50 left-0 top-0 w-[294px] h-full border-r  ease-in-out duration-700 bg-white"
-              : "fixed left-[-100%] duration-700"
-          }
-        >
-          <div>
-            <div className="w-full px-2 h-[64px] flex items-center border-b">
-              <div
-                onClick={() => setShowSide(!showSidebar)}
-                className="flex items-center justify-between w-[87px] h-[40px] px-3 text-grayPrimary bg-gray-100 rounded"
-              >
-                <RxCross2 />
-                <span className="text-sm">Close</span>
-              </div>
-            </div>
+         
+         
+        <div>
+          {/* Overlay to cover the remaining part of the screen */}
+          {showSidebar && (
+            <div
+              className="fixed z-40 inset-0 bg-black opacity-50"
+              onClick={() => setShowSidebar(false)} 
+            ></div>
+          )}
+          {/* Sidebar */}
+          <div
+            className={
+              showSidebar
+                ? "fixed z-50 left-0 top-0 w-[294px] h-full border-r  ease-in-out duration-700 bg-white"
+                : "fixed left-[-100%] duration-700"
+            }
+          >
             <div>
-              <SmallSidebar
-                setShowSide={setShowSide}
-                showSidebar={showSidebar}
-              />
+              <div className="w-full px-2 h-[64px] flex items-center border-b">
+                <div
+                  onClick={() => setShowSidebar(!showSidebar)}
+                  className="flex items-center justify-between w-[87px] h-[40px] px-3 text-grayPrimary bg-gray-100 rounded"
+                >
+                  <RxCross2 />
+                  <span className="text-sm">Close</span>
+                </div>
+              </div>
+              <div>
+                <SmallSidebar
+                  setShowSide={setShowSidebar}
+                  showSidebar={showSidebar}
+                />
+              </div>
             </div>
           </div>
         </div>

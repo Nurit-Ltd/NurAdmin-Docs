@@ -4,7 +4,7 @@ import { MdKeyboardArrowDown, MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { fixedPart, menus } from "../../../data/menuData";
 
-const SmallSidebar = ({setShowSide,showSidebar}) => {
+const SmallSidebar = ({setShowSidebar,showSidebar}) => {
   const [openMenuIndex, setOpenMenuIndex] = useState(null);
 
   const toggleMenu = (index) => {
@@ -18,7 +18,7 @@ const SmallSidebar = ({setShowSide,showSidebar}) => {
         {menus.map((menu, index) => (
           <ul key={index} className="">
             <li className="smallSidebar flex items-center  justify-between">
-              <Link onClick={() => setShowSide(!showSidebar)} to={menu.link} className="w-full flex items-center gap-4">
+              <Link onClick={() => setShowSidebar(!showSidebar)} to={menu.link} className="w-full flex items-center gap-4">
                 <span>{menu.emoji}</span>{" "}
                 <span className="text-sm text-grayMenu leading-[22px]">
                   {menu.label}
@@ -40,7 +40,7 @@ const SmallSidebar = ({setShowSide,showSidebar}) => {
                   <ul className="pl-2">
                     {menu.submenus.map((submenu, subIndex) => (
                       <Link
-                      onClick={() => setShowSide(!showSidebar)}
+                      onClick={() => setShowSidebar(!showSidebar)}
                         to={submenu.link}
                         key={subIndex}
                         className=" gap-3 w-[228px] h-8 flex items-center  px-2 text-gray-800 hover:bg-gray-200 "
