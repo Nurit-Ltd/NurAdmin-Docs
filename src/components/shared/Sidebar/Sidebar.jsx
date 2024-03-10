@@ -23,7 +23,7 @@ const Sidebar = () => {
   return (
     <div className="relative">
       <div className="w-[293px] h-[470px]  hidden md:block overflow-y-auto">
-        <div className="ml-6 py-4  fixed  md:h-[360px] xl1:h-[470px] overflow-y-auto">
+        <div className="ml-6 py-4  fixed  md:h-[360px] xl1:h-[380px] 2xl:h-[470px] overflow-y-auto">
           {menus.map((menu, index) => (
             <div key={index} className="">
               <Link
