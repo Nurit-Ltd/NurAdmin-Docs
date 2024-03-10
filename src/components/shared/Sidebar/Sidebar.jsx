@@ -10,18 +10,26 @@ const Sidebar = () => {
 
   const toggleMenu = (index) => {
     setOpenMenuIndex((prevIndex) => (prevIndex === index ? null : index));
+    scrollToTop(); // Scroll to top when any menu item is clicked
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
   };
 
   return (
     <div className="relative">
       <div className="w-[293px] h-[470px]  hidden md:block overflow-y-auto">
-        <div className="ml-6 py-4  fixed  md:h-[360px] xl:h-[470px] overflow-y-auto">
+        <div className="ml-6 py-4  fixed  md:h-[360px] xl1:h-[470px] overflow-y-auto">
           {menus.map((menu, index) => (
             <div key={index} className="">
               <Link
                 onClick={() => toggleMenu(index)}
                 to={menu.link}
-                className={`sidebar flex items-center justify-between gap-4   text-sm leading-[22px] ${
+                className={`sidebar flex items-center justify-between gap-4 text-sm leading-[22px] ${
                   location.pathname === menu.link
                     ? "text-blueActive bg-activeBg font-bold"
                     : "text-grayMenu hover:bg-hoverBg duration-200"
@@ -55,6 +63,7 @@ const Sidebar = () => {
                                 ? "text-blueActive bg-activeBg font-bold"
                                 : "text-grayMenu hover:bg-hoverBg duration-200 "
                             }`}
+                            onClick={scrollToTop} // Scroll to top when any submenu item is clicked
                           >
                             <span> {submenu.img}</span>
                             <span>{submenu.label}</span>
