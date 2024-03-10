@@ -20,6 +20,7 @@ const Sidebar = () => {
             <div key={index} className="">
              
                 <Link
+                  onClick={() => toggleMenu(index)}
                   to={menu.link}
                   className={`sidebar flex items-center justify-between gap-4   text-sm leading-[22px] ${
                     location.pathname === menu.link
@@ -32,7 +33,7 @@ const Sidebar = () => {
                     <span>{menu.label}</span>
                   </div>
                   {menu.submenus && (
-                    <span onClick={() => toggleMenu(index)}>
+                    <span>
                       {openMenuIndex === index ? (
                         <MdKeyboardArrowDown className="w-[18px] h-[18px] text-blueActive" />
                       ) : (
