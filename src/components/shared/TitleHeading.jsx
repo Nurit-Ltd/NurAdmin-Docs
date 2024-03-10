@@ -45,11 +45,11 @@ const TitleHeading = ({ emoji, title, description }) => {
               <div className="relative" ref={modalRef}>
                 <div
                   onClick={toggleModal}
-                  className={`w-10 h-10 cursor-pointer flex items-center justify-center bg-white  rounded-full hover:bg-blue-100 duration-200 ${
-                    showModal && "bg-blue-200 hover:bg-blue-200  duration-200 rounded-full"
+                  className={`w-10 h-10 cursor-pointer flex items-center justify-center  rounded-full hover:bg-blue-100 duration-200 ${
+                    showModal ? "bg-blue-200" : "bg-white"
                   }`}
                 >
-                  <PiDotsThreeVerticalBold  />
+                  <PiDotsThreeVerticalBold />
                 </div>
                 {showModal && (
                   <div className="modal bg-white shadow-md w-[244px] h-[92px] border rounded absolute top-[60px] xl1:left-0 right-0  py-2 z-[999]">
