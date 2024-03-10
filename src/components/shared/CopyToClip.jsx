@@ -1,33 +1,15 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { BsCopy } from "react-icons/bs";
-import { RxCross2 } from "react-icons/rx";
 
 const CopyToClip = ({ markdown }) => {
   const [copied, setCopied] = useState(false);
-  const [windowDimensions, setWindowDimensions] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight
-  });
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowDimensions({
-        width: window.innerWidth,
-        height: window.innerHeight
-      });
-    };
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   const handleCopy = () => {
     setCopied(true);
     setTimeout(() => {
       setCopied(false);
-    }, 2000); // Reset message after 2 seconds
+    }, 1500); // Reset message after 2 seconds
   };
 
   return (
@@ -35,28 +17,43 @@ const CopyToClip = ({ markdown }) => {
       <CopyToClipboard
         text={markdown}
         onCopy={handleCopy}
-        className="absolute invisible group-hover:visible top-3 right-3 cursor-pointer rounded w-[25px] h-[25px] p-1 bg-white border items-center justify-center hover:flex duration-200"
+        className={`absolute  top-3 right-3 cursor-pointer rounded w-[25px] h-[25px] p-1 flex items-center justify-center   ${
+          copied
+            ? "bg-transparent border-none duration-300"
+            : "bg-white border duration-300"
+        }`}
       >
-        <BsCopy className="text-gray-400 hover:text-grayMenu duration-150" />
-      </CopyToClipboard>
-      {copied && (
-        <div
-          className="main w-[280px] sm:w-[420px] h-[86px] p-4 border bg-white shadow-md fixed bottom-[20px] right-[20px] flex items-center justify-between"
-        >
-          <div className="flex  gap-4">
-            <BsCopy size={18} className="mt-2" />
-            <div>
-              <h5 className="text-lg text-headingText font-medium">
-                Copied to clipboard
-              </h5>
-              <p className="text-grayPrimary">Paste it wherever you like.</p>
+        <div className="relative">
+          {!copied ? (
+            <BsCopy className="text-grayMenu" />
+          ) : (
+            <div className="text-green-500">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                className="h-6 w-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
             </div>
-          </div>
-          <div>
-            <RxCross2 onClick={() => setCopied(false)} />
-          </div>
+          )}
+          {copied && (
+            <div className="absolute top-[-2px] right-[30px] w-[60px] h-[28px] bg-black text-white text-xs flex items-center justify-center rounded-md">
+              <div className="">
+                <span>Copied!</span>
+                <div className=" absolute right-[-3px] top-[9px] w-[10px] h-[10px] bg-black rotate-45 "></div>
+              </div>
+            </div>
+          )}
         </div>
-      )}
+      </CopyToClipboard>
     </>
   );
 };

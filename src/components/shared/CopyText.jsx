@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { BsCopy } from 'react-icons/bs';
-import { RxCross2 } from 'react-icons/rx';
 
 const CopyText = ({ textToCopy }) => {
   const [showModal, setShowModal] = useState(false);
@@ -21,30 +20,38 @@ const CopyText = ({ textToCopy }) => {
   return (
     <div className="">
       <div
-        className="cursor-pointer rounded w-[25px] h-[25px] p-1 bg-white border items-center justify-center"
+        className={`relative cursor-pointer rounded w-[25px] h-[25px] p-1 flex items-center justify-center  ${showModal ? "bg-transparent border-none" : "bg-white border "}`}
         onClick={() => copyToClipboard(textToCopy)}
       >
-        <BsCopy className="text-grayMenu" />
-      </div>
-      {/* Modal */}
-      {showModal && (
-        <div
-          className="main w-[280px] sm:w-[420px] h-[86px] p-4 border bg-white shadow-md fixed bottom-[20px] right-[20px] flex items-center justify-between"
-        >
-          <div className="flex gap-4">
-            <BsCopy size={18} className="mt-2" />
-            <div>
-              <h5 className="text-lg text-headingText font-medium">
-                Copied to clipboard
-              </h5>
-              <p className="text-grayPrimary">Paste it wherever you like.</p>
+        {!showModal ? (
+          <BsCopy className="text-grayMenu" />
+        ) : (
+          <div className="text-green-500">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              className="h-6 w-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M5 13l4 4L19 7"
+              />
+            </svg>
+          </div>
+        )}
+        {showModal && (
+          <div className='absolute top-[-2px] right-[30px] w-[60px] h-[28px] bg-black text-white text-xs flex items-center justify-center rounded-md'>
+            <div className=''>
+              <span>Copied!</span>
+              <div className=' absolute right-[-3px] top-[9px] w-[10px] h-[10px] bg-black rotate-45 '></div>
             </div>
           </div>
-          <div>
-            <RxCross2 onClick={() => setShowModal(false)} />
-          </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 };
