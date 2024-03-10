@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { GoArrowRight } from "react-icons/go";
 import { Link } from "react-router-dom";
 import happy from "../../../assets/icon/happy.svg";
@@ -5,6 +6,11 @@ import sad from "../../../assets/icon/sad.svg";
 import stop from "../../../assets/icon/stop.svg";
 
 const HomeFooter = () => {
+  const [activeImage, setActiveImage] = useState(null);
+
+  const handleClick = (image) => {
+    setActiveImage(image);
+  };
   return (
     <div>
       <div className="pt-6">
@@ -26,14 +32,35 @@ const HomeFooter = () => {
           Last modified 24d ago
         </div>
 
-        <div className="w-[240px] flex items-center gap-2">
-          <h5 className="font-semibold uppercase text-xs tracking-[1.2px] leading-[18px]">
+        <div className="flex items-center gap-2">
+          <h5 className="font-semibold text-grayPrimary uppercase text-xs tracking-[1.2px] leading-[18px]">
             Was this page helpful?
           </h5>
           <div className="flex items-center gap-2">
-            <img src={sad} alt="sad" className="hover:text-red-500" />
-            <img src={happy} alt="happy" />
-            <img src={stop} alt="stop" />
+            <img
+              src={sad}
+              alt="sad"
+              className={`w-6 h-6 rounded-full cursor-pointer bg-${
+                activeImage === "sad" ? "yellow-700" : "gray-400"
+              }`}
+              onClick={() => handleClick("sad")}
+            />
+            <img
+              src={happy}
+              alt="happy"
+              className={`w-6 h-6 rounded-full cursor-pointer bg-${
+                activeImage === "happy" ? "green-500" : "gray-400"
+              }`}
+              onClick={() => handleClick("happy")}
+            />
+            <img
+              src={stop}
+              alt="stop"
+              className={`w-6 h-6 rounded-full cursor-pointer bg-${
+                activeImage === "stop" ? "red-500" : "gray-400"
+              }`}
+              onClick={() => handleClick("stop")}
+            />
           </div>
         </div>
       </div>
