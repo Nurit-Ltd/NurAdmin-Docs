@@ -37,7 +37,7 @@ const Modal = () => {
           <IoSearchOutline size={21} className="text-blueSearch mt-1" />
           <input
             type="text"
-            className="p-4 mt-1 w-full outline-none overflow-hidden placeholder:text-headingText"
+            className="p-4 mt-1 w-full outline-none overflow-hidden placeholder:text-sm placeholder:text-grayPrimary placeholder:font-medium"
             placeholder="Search content…"
           />
         </div>

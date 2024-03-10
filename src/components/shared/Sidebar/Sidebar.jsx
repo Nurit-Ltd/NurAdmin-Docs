@@ -18,53 +18,52 @@ const Sidebar = () => {
         <div className="ml-6 py-4  fixed  md:h-[360px] xl:h-[470px] overflow-y-auto">
           {menus.map((menu, index) => (
             <div key={index} className="">
-             
-                <Link
-                  onClick={() => toggleMenu(index)}
-                  to={menu.link}
-                  className={`sidebar flex items-center justify-between gap-4   text-sm leading-[22px] ${
-                    location.pathname === menu.link
-                      ? "text-blueActive bg-activeBg font-bold"
-                      : "text-grayMenu hover:bg-hoverBg duration-200"
-                  }`}
-                >
-                  <div className=" flex items-center gap-3 ">
-                    <span>{menu.emoji}</span>
-                    <span>{menu.label}</span>
-                  </div>
-                  {menu.submenus && (
-                    <span>
-                      {openMenuIndex === index ? (
-                        <MdKeyboardArrowDown className="w-[18px] h-[18px] text-blueActive" />
-                      ) : (
-                        <MdKeyboardArrowRight className="w-[18px] h-[18px]" />
-                      )}
-                    </span>
-                  )}
-                </Link>
-             
-              {openMenuIndex === index && (
-                <div className="ml-2 mt-1 mb-2">
-                  <div className="border-l">
-                    <ul className="pl-2 space-y-1">
-                      {menu.submenus.map((submenu, subIndex) => (
-                        <Link
-                          to={submenu.link}
-                          key={subIndex}
-                          className={`gap-3 w-[244px] h-8 flex items-center  px-2  ${
-                            location.pathname === submenu.link
-                              ? "text-blueActive bg-activeBg font-bold"
-                              : "text-grayMenu hover:bg-hoverBg duration-200 "
-                          }`}
-                        >
-                          <span> {submenu.img}</span>
-
-                          <span>{submenu.label}</span>
-                        </Link>
-                      ))}
-                    </ul>
-                  </div>
+              <Link
+                onClick={() => toggleMenu(index)}
+                to={menu.link}
+                className={`sidebar flex items-center justify-between gap-4   text-sm leading-[22px] ${
+                  location.pathname === menu.link
+                    ? "text-blueActive bg-activeBg font-bold"
+                    : "text-grayMenu hover:bg-hoverBg duration-200"
+                }`}
+              >
+                <div className=" flex items-center gap-3 ">
+                  <span>{menu.emoji}</span>
+                  <span>{menu.label}</span>
                 </div>
+                {menu.submenus && (
+                  <span>
+                    {openMenuIndex === index ? (
+                      <MdKeyboardArrowDown className="w-[18px] h-[18px] text-blueActive" />
+                    ) : (
+                      <MdKeyboardArrowRight className="w-[18px] h-[18px]" />
+                    )}
+                  </span>
+                )}
+              </Link>
+              {menu.submenus && menu.submenus.length > 0 && (
+                openMenuIndex === index && (
+                  <div className="ml-2 mt-1 mb-2">
+                    <div className="border-l">
+                      <ul className="pl-2 space-y-1">
+                        {menu.submenus.map((submenu, subIndex) => (
+                          <Link
+                            to={submenu.link}
+                            key={subIndex}
+                            className={`gap-3 w-[244px] h-8 flex items-center  px-2  ${
+                              location.pathname === submenu.link
+                                ? "text-blueActive bg-activeBg font-bold"
+                                : "text-grayMenu hover:bg-hoverBg duration-200 "
+                            }`}
+                          >
+                            <span> {submenu.img}</span>
+                            <span>{submenu.label}</span>
+                          </Link>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                )
               )}
             </div>
           ))}
