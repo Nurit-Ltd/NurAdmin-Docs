@@ -24,7 +24,8 @@ export default {
         grayXm: "#8899a8",
         grayFix:"#eceff1",
         activeBg: "#85a3e01a",
-        hoverBg: "#f7f7f7"
+        hoverBg: "#f7f7f7",
+        blueSearch: "#4EAAC8"
       },
       fontSize: {
         heading1: "40px",
