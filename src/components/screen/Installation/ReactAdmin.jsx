@@ -35,7 +35,7 @@ const ReactAdmin = () => {
                 npm install
               </p>
 
-              <div className="opacity-0 group-hover:opacity-100 duration-300">
+              <div>
                 <CopyText textToCopy="npm install" />
               </div>
             </div>
@@ -47,7 +47,7 @@ const ReactAdmin = () => {
                 npm <span className="text-headingText">run dev</span>
               </p>
 
-              <div className="opacity-0 group-hover:opacity-100 duration-300">
+              <div>
                 <CopyText textToCopy="npm run dev" />
               </div>
             </div>

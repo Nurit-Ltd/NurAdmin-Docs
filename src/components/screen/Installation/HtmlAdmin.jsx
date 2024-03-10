@@ -43,7 +43,7 @@ const HtmlAdmin = () => {
                 npm install
               </p>
 
-              <div className="opacity-0 group-hover:opacity-100 duration-300">
+              <div>
                 <CopyText textToCopy="npm install" />
               </div>
             </div>
@@ -55,7 +55,7 @@ const HtmlAdmin = () => {
                 npm <span className="text-headingText">run start</span>
               </p>
 
-              <div className="opacity-0 group-hover:opacity-100 duration-300">
+              <div>
                 <CopyText textToCopy="npm run start" />
               </div>
             </div>
@@ -71,7 +71,7 @@ const HtmlAdmin = () => {
                 npm <span className="text-headingText">run build</span>
               </p>
 
-              <div className="opacity-0 group-hover:opacity-100 duration-300">
+              <div className="">
                 <CopyText textToCopy="npm run build" />
               </div>
             </div>

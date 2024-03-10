@@ -38,7 +38,7 @@ const VueJsAdmin = () => {
                 npm install
               </p>
 
-              <div className="opacity-0 group-hover:opacity-100 duration-300">
+              <div>
                 <CopyText textToCopy="npm install" />
               </div>
             </div>
@@ -50,7 +50,7 @@ const VueJsAdmin = () => {
                 npm <span className="text-headingText">run dev</span>
               </p>
 
-              <div className="opacity-0 group-hover:opacity-100 duration-300">
+              <div>
                 <CopyText textToCopy="npm run dev" />
               </div>
             </div>
@@ -80,7 +80,7 @@ const VueJsAdmin = () => {
                   npm <span className="text-headingText">run build</span>
                 </p>
 
-                <div className="opacity-0 group-hover:opacity-100 duration-300">
+                <div>
                   <CopyText textToCopy="npm run build" />
                 </div>
               </div>

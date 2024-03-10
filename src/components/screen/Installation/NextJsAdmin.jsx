@@ -32,7 +32,7 @@ const NextJsAdmin = () => {
                 npm install
               </p>
 
-              <div className="opacity-0 group-hover:opacity-100 duration-300">
+              <div>
                 <CopyText textToCopy="npm install" />
               </div>
             </div>
@@ -44,7 +44,7 @@ const NextJsAdmin = () => {
                 yarn install
               </p>
 
-              <div className="opacity-0 group-hover:opacity-100 duration-300">
+              <div>
                 <CopyText textToCopy="yarn install" />
               </div>
             </div>
@@ -54,7 +54,7 @@ const NextJsAdmin = () => {
               npm run dev
               </p>
 
-              <div className="opacity-0 group-hover:opacity-100 duration-300">
+              <div>
                 <CopyText textToCopy="npm run dev" />
               </div>
             </div>
@@ -66,7 +66,7 @@ const NextJsAdmin = () => {
                 yarn dev
               </p>
 
-              <div className="opacity-0 group-hover:opacity-100 duration-300">
+              <div>
                 <CopyText textToCopy="yarn dev" />
               </div>
             </div>
