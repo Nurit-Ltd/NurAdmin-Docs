@@ -1,4 +1,4 @@
-
+import { FaUpRightFromSquare } from "react-icons/fa6";
 export const menus = [
   {
     id: 1,
@@ -65,6 +65,7 @@ export const menus = [
     emoji: "🎯",
     label: "Back to Main Site",
     link: "https://tailadmin.com/",
+    re_icon: FaUpRightFromSquare ,
   },
   
   

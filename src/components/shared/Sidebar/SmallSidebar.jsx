@@ -24,9 +24,13 @@ const SmallSidebar = ({ setShowSidebar, showSidebar }) => {
                   className="w-full flex items-center gap-4"
                 >
                   <span>{menu.emoji}</span>{" "}
-                  <span className="text-sm text-grayMenu leading-[22px]">
-                    {menu.label}
-                  </span>
+                  <div className="w-full flex items-center justify-between">
+                    <span className="text-sm text-grayMenu leading-[22px]">
+                      {menu.label}
+                    </span>
+                    <span>{menu.re_icon && <menu.re_icon />}</span>{" "}
+                    {/* Render the icon if it exists */}
+                  </div>
                 </Link>
                 {menu.submenus && (
                   <span onClick={() => toggleMenu(index)}>

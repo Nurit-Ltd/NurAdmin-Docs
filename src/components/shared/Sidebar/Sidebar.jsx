@@ -25,8 +25,7 @@ const Sidebar = () => {
       <div className="relative">
         <div className="w-[293px] h-[470px]  hidden md:block overflow-y-auto">
           <div className="ml-6 py-4  fixed  md:h-[360px] xl1:h-[380px] 2xl:h-[470px] overflow-y-auto">
-            {menus.map((
-              menu, index) => (
+            {menus.map((menu, index) => (
               <div key={index} className="">
                 <Link
                   onClick={() => toggleMenu(index)}
@@ -37,9 +36,12 @@ const Sidebar = () => {
                       : "text-grayMenu hover:bg-hoverBg duration-200"
                   }`}
                 >
-                  <div className=" flex items-center gap-3 ">
+                  <div className="w-full flex items-center gap-3 ">
                     <span>{menu.emoji}</span>
-                    <span>{menu.label}</span>
+                    <div className="w-full flex items-center justify-between">
+                      <span>{menu.label}</span>
+                      <span>{menu.re_icon && <menu.re_icon />}</span> {/* Render the icon if it exists */}
+                    </div>
                   </div>
                   {menu.submenus && (
                     <span>
@@ -70,8 +72,8 @@ const Sidebar = () => {
                             >
                               <span> {submenu.img}</span>
                               <div className="w-full flex items-center justify-between">
-                              <span>{submenu.label}</span>
-                              <span className=" text-xl">{submenu.icon}</span>
+                                <span>{submenu.label}</span>
+                                <span className=" text-xl">{submenu.icon}</span>
                               </div>
                             </Link>
                           ))}
