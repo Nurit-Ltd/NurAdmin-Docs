@@ -1,3 +1,4 @@
+
 export const menus = [
   {
     id: 1,
@@ -11,10 +12,10 @@ export const menus = [
     label: "Installation",
     link: "/installation",
     submenus: [
-      { label: "HTML Version", link: "#section1" },
-      { label: "React Version", link: "#section2" },
-      { label: "Next.js Version", link: "#section3" },
-      { label: "Vue.js Version", link: "#section4" },
+      { label: "HTML Version", icon:"#", link: "#section1" },
+      { label: "React Version", icon:"#", link: "#section2" },
+      { label: "Next.js Version", icon:"#", link: "#section3" },
+      { label: "Vue.js Version", icon:"#", link: "#section4" },
     ],
   },
   {

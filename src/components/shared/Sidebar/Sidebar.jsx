@@ -25,7 +25,8 @@ const Sidebar = () => {
       <div className="relative">
         <div className="w-[293px] h-[470px]  hidden md:block overflow-y-auto">
           <div className="ml-6 py-4  fixed  md:h-[360px] xl1:h-[380px] 2xl:h-[470px] overflow-y-auto">
-            {menus.map((menu, index) => (
+            {menus.map((
+              menu, index) => (
               <div key={index} className="">
                 <Link
                   onClick={() => toggleMenu(index)}
@@ -68,7 +69,10 @@ const Sidebar = () => {
                               onClick={scrollToTop} // Scroll to top when any submenu item is clicked
                             >
                               <span> {submenu.img}</span>
+                              <div className="w-full flex items-center justify-between">
                               <span>{submenu.label}</span>
+                              <span className=" text-xl">{submenu.icon}</span>
+                              </div>
                             </Link>
                           ))}
                         </ul>
