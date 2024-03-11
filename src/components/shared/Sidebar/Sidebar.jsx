@@ -16,75 +16,75 @@ const Sidebar = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   };
 
   return (
-    <div className="relative">
-      <div className="w-[293px] h-[470px]  hidden md:block overflow-y-auto">
-        <div className="ml-6 py-4  fixed  md:h-[360px] xl1:h-[380px] 2xl:h-[470px] overflow-y-auto">
-          {menus.map((menu, index) => (
-            <div key={index} className="">
-              <Link
-                onClick={() => toggleMenu(index)}
-                to={menu.link}
-                className={`sidebar flex items-center justify-between gap-4 text-sm leading-[22px] ${
-                  location.pathname === menu.link
-                    ? "text-blueActive bg-activeBg font-bold"
-                    : "text-grayMenu hover:bg-hoverBg duration-200"
-                }`}
-              >
-                <div className=" flex items-center gap-3 ">
-                  <span>{menu.emoji}</span>
-                  <span>{menu.label}</span>
-                </div>
-                {menu.submenus && (
-                  <span>
-                    {openMenuIndex === index ? (
-                      <MdKeyboardArrowDown className="w-[18px] h-[18px] text-blueActive" />
-                    ) : (
-                      <MdKeyboardArrowRight className="w-[18px] h-[18px]" />
-                    )}
-                  </span>
-                )}
-              </Link>
-              {menu.submenus && menu.submenus.length > 0 && (
-                openMenuIndex === index && (
-                  <div className="ml-2 mt-1 mb-2">
-                    <div className="border-l">
-                      <ul className="pl-2 space-y-1">
-                        {menu.submenus.map((submenu, subIndex) => (
-                          <Link
-                            to={submenu.link}
-                            key={subIndex}
-                            className={`gap-3 w-[244px] h-8 flex items-center  px-2  ${
-                              location.pathname === submenu.link
-                                ? "text-blueActive bg-activeBg font-bold"
-                                : "text-grayMenu hover:bg-hoverBg duration-200 "
-                            }`}
-                            onClick={scrollToTop} // Scroll to top when any submenu item is clicked
-                          >
-                            <span> {submenu.img}</span>
-                            <span>{submenu.label}</span>
-                          </Link>
-                        ))}
-                      </ul>
-                    </div>
+    <div>
+      <div className="relative">
+        <div className="w-[293px] h-[470px]  hidden md:block overflow-y-auto">
+          <div className="ml-6 py-4  fixed  md:h-[360px] xl1:h-[380px] 2xl:h-[470px] overflow-y-auto">
+            {menus.map((menu, index) => (
+              <div key={index} className="">
+                <Link
+                  onClick={() => toggleMenu(index)}
+                  to={menu.link}
+                  className={`sidebar flex items-center justify-between gap-4 text-sm leading-[22px] ${
+                    location.pathname === menu.link
+                      ? "text-blueActive bg-activeBg font-bold"
+                      : "text-grayMenu hover:bg-hoverBg duration-200"
+                  }`}
+                >
+                  <div className=" flex items-center gap-3 ">
+                    <span>{menu.emoji}</span>
+                    <span>{menu.label}</span>
                   </div>
-                )
-              )}
-            </div>
-          ))}
+                  {menu.submenus && (
+                    <span>
+                      {openMenuIndex === index ? (
+                        <MdKeyboardArrowDown className="w-[18px] h-[18px] text-blueActive" />
+                      ) : (
+                        <MdKeyboardArrowRight className="w-[18px] h-[18px]" />
+                      )}
+                    </span>
+                  )}
+                </Link>
+                {menu.submenus &&
+                  menu.submenus.length > 0 &&
+                  openMenuIndex === index && (
+                    <div className="ml-2 mt-1 mb-2">
+                      <div className="border-l">
+                        <ul className="pl-2 space-y-1">
+                          {menu.submenus.map((submenu, subIndex) => (
+                            <Link
+                              to={submenu.link}
+                              key={subIndex}
+                              className={`gap-3 w-[244px] h-8 flex items-center  px-2  ${
+                                location.pathname === submenu.link
+                                  ? "text-blueActive bg-activeBg font-bold"
+                                  : "text-grayMenu hover:bg-hoverBg duration-200 "
+                              }`}
+                              onClick={scrollToTop} // Scroll to top when any submenu item is clicked
+                            >
+                              <span> {submenu.img}</span>
+                              <span>{submenu.label}</span>
+                            </Link>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  )}
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
 
-      <div>
         {fixedPart.map((item) => (
           <Link
             key={item.id}
             to={item.link}
-            className=" fixed left-0 bottom-0 w-[293px] h-[60px] px-4 pb-4 mb-4 cursor-pointer hidden md:block"
+            className="fixed  left-0 bottom-0 w-[293px] h-[60px] px-4 pb-4 mb-4  cursor-pointer hidden md:block"
           >
             <div className="w-full h-[60px] bg-grayFix p-4 flex items-center gap-4 ">
               <FaBook size={24} className="text-headingText" />
