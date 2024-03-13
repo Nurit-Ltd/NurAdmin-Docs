@@ -7,18 +7,19 @@ const AdminCard = () => {
       {AdminCardData.map((cardItem) => (
         <div key={cardItem.id}>
           <div className="py-4">
-            <div className="touch-manipulation cursor-pointer"><img src={admin} alt="admin pic" /></div>
+            <div className="touch-manipulation cursor-pointer">
+              <img src={admin} alt="admin pic" />
+            </div>
             <div className="pt-2 flex items-center justify-center">
               <p className="text-xs text-graySm">Current Version - 1.3.0</p>
             </div>
           </div>
-          
-          {cardItem.content.map((items,index)=>(
-             <ul key={index} className="py-3">
-               <li className="leading-6 text-headingText">{items}</li>
-             </ul>
+
+          {cardItem.content.map((items, index) => (
+            <ul key={index} className="py-3">
+              <li className="leading-6 text-headingText">{items}</li>
+            </ul>
           ))}
-          
         </div>
       ))}
     </div>
