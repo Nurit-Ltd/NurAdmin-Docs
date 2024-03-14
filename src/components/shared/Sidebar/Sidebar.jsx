@@ -21,7 +21,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div>
+    <div className="">
       <div className="relative">
         <div className="w-[293px] h-[470px]  hidden md:block overflow-y-auto">
           <div className="ml-6 py-4  fixed  md:h-[360px] xl1:h-[380px] 2xl:h-[470px] overflow-y-auto">
@@ -85,14 +85,15 @@ const Sidebar = () => {
             ))}
           </div>
         </div>
-
+        
+       
         {fixedPart.map((item) => (
           <Link
             key={item.id}
             to={item.link}
-            className="fixed  left-0 bottom-0 w-[293px] h-[60px] px-4 pb-4 mb-4  cursor-pointer hidden md:block"
+            className="fixed bottom-0 w-[293px] h-[60px] px-4 pb-4 mb-4  cursor-pointer hidden md:block"
           >
-            <div className="w-full h-[60px] bg-grayFix p-4 flex items-center gap-4 ">
+            <div className="w-full h-[60px] bg-grayFix p-4 flex items-center gap-4">
               <FaBook size={24} className="text-headingText" />
               <p className="text-sm text-grayPrimary leading-5 ">
                 {item.label} <span className="font-bold">{item.strong}</span>
@@ -100,6 +101,7 @@ const Sidebar = () => {
             </div>
           </Link>
         ))}
+        
       </div>
     </div>
   );
