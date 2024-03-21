@@ -8,7 +8,7 @@ const UpdateLog = () => {
     <>
       <TitleHeading
         emoji="☑️"
-        description="Update logs of TailAdmin"
+        description="Update logs of NurAdmin"
         title="Update Logs"
       />
       <div className="w-auto lg:w-[723px] xl:w-[979px] xl1:w-[919px] 2xl:w-[1015px] 3xl:w-[1079px] 4xl:w-[1200px]">
@@ -19,7 +19,12 @@ const UpdateLog = () => {
                 key={language.id}
                 className="w-[217px] h-[122px] border p-4 footer_bar duration-200"
               >
-                <Link to={language.link} className="hover:text-headingText hover:underline-offset-4 hover:underline duration-200  text-blueActive font-bold focus:text-blueActive">{language.title}</Link>
+                <Link
+                  to={language.link}
+                  className="hover:text-headingText hover:underline-offset-4 hover:underline duration-200  text-blueActive font-bold focus:text-blueActive"
+                >
+                  {language.title}
+                </Link>
               </div>
             ))}
           </div>

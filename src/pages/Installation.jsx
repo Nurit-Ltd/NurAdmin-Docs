@@ -36,7 +36,7 @@ const Installation = () => {
         <TitleHeading
           emoji="🚀"
           title="Installation"
-          description="This part of the documentation will show you how you can install and configure TailAdmin templates. Both Tailwind + AlpineJS and Tailwind + React."
+          description="This part of the documentation will show you how you can install and configure NurAdmin templates. Both Tailwind + AlpineJS and Tailwind + React."
         />
         <div>
           <section id="section1">
@@ -74,7 +74,7 @@ const Installation = () => {
             }`}
           >
             <a href="#section1" className="ml-2">
-              TailAdmin Vue: Tailwind + Vue.js
+              NurAdmin Vue: Tailwind + Vue.js
             </a>
           </li>
           <li
@@ -85,7 +85,7 @@ const Installation = () => {
             }`}
           >
             <a href="#section2" className="ml-2">
-              TailAdmin React: Tailwind + React.js
+              NurAdmin React: Tailwind + React.js
             </a>
           </li>
           <li
@@ -96,7 +96,7 @@ const Installation = () => {
             }`}
           >
             <a href="#section3" className="ml-2">
-              TailAdmin Next.js: Tailwind + Next.js
+              NurAdmin Next.js: Tailwind + Next.js
             </a>
           </li>
           <li
@@ -107,7 +107,7 @@ const Installation = () => {
             }`}
           >
             <a href="#section4" className="ml-2">
-              TailAdmin Vue: Tailwind + Vue.js
+              NurAdmin Vue: Tailwind + Vue.js
             </a>
           </li>
         </ul>

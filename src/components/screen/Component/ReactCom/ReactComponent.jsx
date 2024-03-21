@@ -42,7 +42,7 @@ const ReactComponent = () => {
           <TitleHeading
             emoji="💎"
             title="React.js Components"
-            description="TailAdmin: ReactJS + Tailwind offer more than 200 dashboard UI components. You can use them to build ReactJS + Tailwind CSS dashboard templates easily.
+            description="NurAdmin: ReactJS + Tailwind offer more than 200 dashboard UI components. You can use them to build ReactJS + Tailwind CSS dashboard templates easily.
           "
           />
           <div className="w-auto lg:w-[723px] xl:w-[979px] xl1:w-[919px] 2xl:w-[1015px] 3xl:w-[1079px] 4xl:w-[1200px] relative">

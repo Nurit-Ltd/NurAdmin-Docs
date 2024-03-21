@@ -2,53 +2,53 @@
 import discord from "../assets/image/discord.ico";
 import range from "../assets/image/favicon.ico";
 
-export const useFullLinkData =[
+export const useFullLinkData = [
   {
-    id:1,
-    img:"",
-    description:"Oops! unexpected error while rendering this block",
-    post:[
+    id: 1,
+    img: "",
+    description: "Oops! unexpected error while rendering this block",
+    post: [
       {
         emoji: "⭐",
-        text: "Star Our Repository on GitHub"
-      }
-    ]
+        text: "Star Our Repository on GitHub",
+      },
+    ],
   },
   {
-    id:2,
+    id: 2,
     img: range,
-    link: "https://tailadmin.com/pricing",
-    description:"Pricing | TailAdmin Pro - TailAdmin",
-    post:[
+    link: "https://nurit.io",
+    description: "Pricing | NurAdmin Pro - NurAdmin",
+    post: [
       {
         emoji: "🔥",
-        text: "TailAdmin Pro - Pricing"
-      }
-    ]
+        text: "NurAdmin Pro - Pricing",
+      },
+    ],
   },
   {
-    id:3,
+    id: 3,
     img: range,
-    link: "https://tailadmin.com/support",
-    description:"Support | TailAdmin",
-    post:[
+    link: "https://nurit.io",
+    description: "Support | NurAdmin",
+    post: [
       {
         emoji: "🎧 ",
-        text: "TailAdmin Support"
-      }
-    ]
+        text: "NurAdmin Support",
+      },
+    ],
   },
   {
-    id:4,
+    id: 4,
     img: discord,
-    link: "https://discord.com/invite/p4EeKnsKw3",
-    description:"Join the Pimjo Labs Discord Server!",
+    link: "#",
+    description: "Join the Pimjo Labs Discord Server!",
     subDes: "Discord",
-    post:[
+    post: [
       {
         emoji: "💬  ",
-        text: "Chat us on Discord"
-      }
-    ]
+        text: "Chat us on Discord",
+      },
+    ],
   },
-]
+];

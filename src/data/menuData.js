@@ -80,7 +80,7 @@ export const menus = [
     id: 8,
     emoji: "🎯",
     label: "Back to Main Site",
-    link: "https://tailadmin.com/",
+    link: "https://NurAdmin.com/",
     re_icon: FaUpRightFromSquare,
   },
 

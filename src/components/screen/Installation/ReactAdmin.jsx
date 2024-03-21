@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import CopyText from "../../shared/CopyText";
 
@@ -9,13 +8,13 @@ const ReactAdmin = () => {
         <div className="pt-20">
           <div className="pb-2">
             <h3 className="text-xl leading-6 text-headingText font-bold">
-              TailAdmin React: Tailwind + React.js
+              NurAdmin React: Tailwind + React.js
             </h3>
           </div>
           <div className="pt-3 space-y-3 text-headingText leading-6">
             <p>
-              In this part, we are going to show you how to install the
-              TailAdmin React template.
+              In this part, we are going to show you how to install the NurAdmin
+              React template.
             </p>
             <p>Follow these steps to install the templates.</p>
             <p>
@@ -25,7 +24,7 @@ const ReactAdmin = () => {
           </div>
           <div className="py-4">
             <ul className="pl-1 list-decimal list-inside space-y-2 text-headingText">
-              <li>Download the dashboard template from TailAdmin</li>
+              <li>Download the dashboard template from NurAdmin</li>
               <li>Then navigate to the project folder and run this command:</li>
             </ul>
           </div>
@@ -65,11 +64,14 @@ const ReactAdmin = () => {
                 Now you can customize the dashboard and see the changes locally.
               </p>
               <p className="text-headingText leading-6">
-                After that, run this command to generate the <span className="font-medium">build</span> folder. You
-                can upload this build folder to your server, and the dashboard
-                will be live.
+                After that, run this command to generate the{" "}
+                <span className="font-medium">build</span> folder. You can
+                upload this build folder to your server, and the dashboard will
+                be live.
               </p>
-              <p className="text-redText bg-bgBluer px-1 w-fit">npm run build</p>
+              <p className="text-redText bg-bgBluer px-1 w-fit">
+                npm run build
+              </p>
             </div>
           </div>
         </div>

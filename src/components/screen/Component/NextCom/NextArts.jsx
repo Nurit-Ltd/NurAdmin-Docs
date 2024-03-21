@@ -10,9 +10,9 @@ import { Metadata } from "next";
 import DefaultLayout from "@/components/Layouts/DefaultLaout";
 
 export const metadata: Metadata = {
-  title: "Next.js Alerts | TailAdmin - Next.js Dashboard Template",
+  title: "Next.js Alerts | NurAdmin - Next.js Dashboard Template",
   description:
-    "This is Next.js Alerts page for TailAdmin - Next.js Tailwind CSS Admin Dashboard Template",
+    "This is Next.js Alerts page for NurAdmin - Next.js Tailwind CSS Admin Dashboard Template",
   // other metadata
 };
 
@@ -116,14 +116,12 @@ export default Alerts;
   `;
   return (
     <div className="pt-20">
-    {nextArt.map((item) => (
+      {nextArt.map((item) => (
         <div key={item.id} className="space-y-8">
           <h3 className="text-xl text-headingText font-bold leading-6">
             {item.title}
           </h3>
-          <p className="text-headingText leading-6">
-            {item.description}
-          </p>
+          <p className="text-headingText leading-6">{item.description}</p>
           <div>
             <img src={item.formImg} alt="form-input" />
           </div>

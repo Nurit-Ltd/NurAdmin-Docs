@@ -8,18 +8,18 @@ const HtmlAdmin = () => {
         <div className="pt-20">
           <div className="pb-2">
             <h3 className="text-xl leading-6 text-headingText font-bold">
-              TailAdmin HTML: Tailwind + Alpine.js
+              NurAdmin HTML: Tailwind + Alpine.js
             </h3>
           </div>
           <div className="pt-3 space-y-3 text-headingText leading-6">
             <p>
-              To use the TailAdmin dashboard template, you ll first have to
+              To use the NurAdmin dashboard template, you ll first have to
               install it.
             </p>
             <p>
               Follow these steps to install the{" "}
               <span className="text-blueActive">
-                <Link to={"#"}> TailAdmin Tailwind + AlpineJS</Link>
+                <Link to={"#"}> NurAdmin Tailwind + AlpineJS</Link>
               </span>{" "}
               template:
             </p>
@@ -32,7 +32,7 @@ const HtmlAdmin = () => {
           <div className="py-4">
             <ul className="pl-1 list-decimal list-inside space-y-2 text-headingText">
               <li>
-                Download the dashboard template from TailAdmin, and extract it.
+                Download the dashboard template from NurAdmin, and extract it.
               </li>
               <li>Then navigate to the project folder and run this command:</li>
             </ul>
