@@ -30,38 +30,42 @@ const HtmlComponent = () => {
   }, []);
   return (
     <>
-      <TitleHeading
-        emoji="🌐"
-        title="HTML Components"
-        description="TailAdmin HTML: Tailwind + Alpine.js has more than 200 components, and you can use them to build any kind of dashboard you need.
+      <div className="flex">
+        <div>
+          <TitleHeading
+            emoji="🌐"
+            title="HTML Components"
+            description="TailAdmin HTML: Tailwind + Alpine.js has more than 200 components, and you can use them to build any kind of dashboard you need.
           "
-      />
-      <div className="w-auto lg:w-[723px] xl:w-[979px] xl1:w-[919px] 2xl:w-[1015px] 3xl:w-[1079px] 4xl:w-[1200px] relative">
-        <div className="container_fluid">
-          <h5 className="pt-12 font-bold text-blueIcon leading-6">
-            Here are a few examples of the components:
-          </h5>
+          />
+          <div className="w-auto lg:w-[723px] xl:w-[979px] xl1:w-[919px] 2xl:w-[1015px] 3xl:w-[1079px] 4xl:w-[1200px] relative">
+            <div className="container_fluid">
+              <h5 className="pt-12 font-bold text-blueIcon leading-6">
+                Here are a few examples of the components:
+              </h5>
 
-          <section id="section1">
-            <FormInputField />
-          </section>
-          <section id="section2">
-             <AnalyticsChart />
-          </section>
-          <section id="section3">
-            <TodoList />
-          </section>
+              <section id="section1">
+                <FormInputField />
+              </section>
+              <section id="section2">
+                <AnalyticsChart />
+              </section>
+              <section id="section3">
+                <TodoList />
+              </section>
 
-          <div className="pb-10">
-            <FooterAllPage
-              title1="Components"
-              title2="React.js Components"
-              link1="/components"
-              link2="/components/react-components"
-            />
+              <div className="pb-10">
+                <FooterAllPage
+                  title1="Components"
+                  title2="React.js Components"
+                  link1="/components"
+                  link2="/components/react-components"
+                />
+              </div>
+            </div>
           </div>
         </div>
-        <nav className="hidden xl1:block fixed top-[105px] right-0 p-4 w-[220px] h-[150px]">
+        <nav className="hidden xl1:block sticky top-[105px] right-0 p-4 h-[150px]">
           <ul className="">
             <h4 className="px-6 mb-[6px] uppercase font-bold text-grayPrimary text-xs leading-[18px] tracking-[1.2px]">
               On this page
