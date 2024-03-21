@@ -1,11 +1,5 @@
-
-
 const BackToMain = () => {
-  return (
-    <div>
-      UseFulLinks
-    </div>
-  );
+  return <div>UseFulLinks</div>;
 };
 
 export default BackToMain;

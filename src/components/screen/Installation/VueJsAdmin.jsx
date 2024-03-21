@@ -8,24 +8,24 @@ const VueJsAdmin = () => {
         <div className="pt-20">
           <div className="pb-2">
             <h3 className="text-xl leading-6 text-headingText font-bold">
-              TailAdmin Vue: Tailwind + Vue.js
+              NurAdmin Vue: Tailwind + Vue.js
             </h3>
           </div>
           <div className="pt-3 space-y-3 text-headingText leading-6">
             <p className="max-w-[634px]">
               In this section, we ll guide you through the installation process
-              of the TailAdmin Vue template.
+              of the NurAdmin Vue template.
             </p>
             <p>Follow these steps to install the template:</p>
             <p>
               <span className="font-bold">Note:</span> We ve utilized
               <span className="font-bold"> Vite </span> as build tool for
-              TailAdmin Vue.
+              NurAdmin Vue.
             </p>
           </div>
           <div className="py-4">
             <ul className="pl-1 list-decimal list-inside space-y-2 text-headingText">
-              <li>Download and extract the TailAdmin zip package</li>
+              <li>Download and extract the NurAdmin zip package</li>
               <li>
                 Navigate to the project folder and execute the following
                 command:
@@ -56,7 +56,7 @@ const VueJsAdmin = () => {
             </div>
             <div className="space-y-4 pt-9">
               <p className="text-headingText max-w-[550px] leading-6">
-                Upon successful execution of the dev command, the TailAdmin will
+                Upon successful execution of the dev command, the NurAdmin will
                 open on port:
                 <span className="text-blueActive">
                   <Link to={"http://localhost:5173/"}>
@@ -86,9 +86,7 @@ const VueJsAdmin = () => {
               </div>
             </div>
           </div>
-          
         </div>
-        
       </div>
     </div>
   );
