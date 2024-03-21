@@ -12,10 +12,10 @@ export const menus = [
     label: "Installation",
     link: "/installation",
     submenus: [
-      { label: "HTML Version", icon:"#", link: "#section1" },
-      { label: "React Version", icon:"#", link: "#section2" },
-      { label: "Next.js Version", icon:"#", link: "#section3" },
-      { label: "Vue.js Version", icon:"#", link: "#section4" },
+      { label: "HTML Version", icon: "#", link: "#section1" },
+      { label: "React Version", icon: "#", link: "#section2" },
+      { label: "Next.js Version", icon: "#", link: "#section3" },
+      { label: "Vue.js Version", icon: "#", link: "#section4" },
     ],
   },
   {
@@ -24,10 +24,26 @@ export const menus = [
     label: "Components",
     link: "/components",
     submenus: [
-      { img: "🌐", label: "HTML Components", link: "/components/html-components" },
-      { img: "💎", label: "React Components", link: "/components/react-components" },
-      { img: "🔥", label: "Next.js Components", link: "/components/next-components" },
-      { img: "🌳", label: "Vue.js Components", link: "/components/vue-components" },
+      {
+        img: "🌐",
+        label: "HTML Components",
+        link: "/components/html-components",
+      },
+      {
+        img: "💎",
+        label: "React Components",
+        link: "/components/react-components",
+      },
+      {
+        img: "🔥",
+        label: "Next.js Components",
+        link: "/components/next-components",
+      },
+      {
+        img: "🌳",
+        label: "Vue.js Components",
+        link: "/components/vue-components",
+      },
     ],
   },
   {
@@ -65,19 +81,16 @@ export const menus = [
     emoji: "🎯",
     label: "Back to Main Site",
     link: "https://tailadmin.com/",
-    re_icon: FaUpRightFromSquare ,
+    re_icon: FaUpRightFromSquare,
   },
-  
-  
+
   //-----------------------------
 ];
-export const fixedPart =[
-  
-    {
-      id: 1,
-      label: "Powered By",
-      strong: "Nur IT",
-      link: "https://nurit.io/",
-    },
-  
-]
+export const fixedPart = [
+  {
+    id: 1,
+    label: "Powered By",
+    strong: "Nur IT",
+    link: "https://nurit.io/",
+  },
+];

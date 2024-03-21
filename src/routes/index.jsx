@@ -17,11 +17,10 @@ import Installation from "../pages/Installation";
 import UpdateLog from "../pages/UpdateLog";
 import UseFullLinks from "../pages/UseFullLinks";
 
-
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout/>,
+    element: <Layout />,
     children: [
       {
         path: "/",
@@ -52,7 +51,7 @@ export const router = createBrowserRouter([
         element: <UseFullLinks />,
       },
       {
-        path: "https://tailadmin.com/",
+        path: "https://nurit.io/",
         element: <BackToMain />,
       },
       {
@@ -73,7 +72,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/update-log/html",
-        element: <UpdateHtml /> ,
+        element: <UpdateHtml />,
       },
       {
         path: "/update-log/react",

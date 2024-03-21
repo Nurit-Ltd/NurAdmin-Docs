@@ -24,7 +24,12 @@ const Components = () => {
             ))}
           </div>
           <div className="pb-10">
-          <FooterAllPage title1="Installation" title2="HTML Components" link1="/installation" link2="/components/html-components" />
+            <FooterAllPage
+              title1="Installation"
+              title2="HTML Components"
+              link1="/installation"
+              link2="/components/html-components"
+            />
           </div>
         </div>
       </div>

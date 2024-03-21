@@ -17,7 +17,6 @@ const Modal = () => {
     setModalWidth(window.innerWidth * 0.9);
 
     window.addEventListener("resize", handleResize);
-
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -26,7 +25,10 @@ const Modal = () => {
   return (
     <div
       className="backdrop bg-black bg-opacity-50 flex justify-center items-start fixed inset-0 z-50 outline-none focus:outline-none"
-      style={{ paddingTop: `${windowPaddingTop}px`, paddingLeft: `${windowPaddingLeft}px` }}
+      style={{
+        paddingTop: `${windowPaddingTop}px`,
+        paddingLeft: `${windowPaddingLeft}px`,
+      }}
     >
       <div
         onClick={(e) => e.stopPropagation()}
@@ -35,15 +37,17 @@ const Modal = () => {
       >
         <div className="w-full h-[52px] px-6 flex items-center">
           <IoSearchOutline size={21} className="text-blueSearch mt-1" />
+          {/* FIXME: Nothing can be written in input filed */}
           <input
             type="text"
             className="p-4 mt-1 w-full outline-none overflow-hidden placeholder:text-sm placeholder:text-grayPrimary placeholder:font-medium"
             placeholder="Search content…"
+            autoFocus
           />
         </div>
-        <div className="w-full flex items-center justify-center text-sm text-grayPrimary">
-          <p>Type something to search</p>
-        </div>
+        <p className="w-full flex items-center justify-center text-sm text-grayPrimary">
+          Type something to search
+        </p>
       </div>
     </div>
   );

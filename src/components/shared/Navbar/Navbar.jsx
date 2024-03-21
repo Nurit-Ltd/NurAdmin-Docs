@@ -1,4 +1,5 @@
-import { useState } from "react";
+import logo from "../../../assets/image/logo.svg";
+import { useEffect, useState } from "react";
 import { BiSearch } from "react-icons/bi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
@@ -9,6 +10,17 @@ import SmallSidebar from "../Sidebar/SmallSidebar";
 const Navbar = () => {
   const [openFilterModal, setOpenFilterModal] = useState(false);
   const [showSidebar, setShowSidebar] = useState(false);
+
+  // ctrl + k to open the search modal
+  const searchFocusHandler = (event) => {
+    if (event.ctrlKey && event.key === "k") {
+      event.preventDefault();
+      setOpenFilterModal(true);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("keydown", searchFocusHandler);
+  });
 
   return (
     <div className="fixed top-0 left-0 right-0 z-[999]">
@@ -23,10 +35,10 @@ const Navbar = () => {
 
             <Link to={"/"} className="pl-4 pr-6 flex items-center gap-4">
               <div className="w-6 h-6 md:w-9 md:h-9 border bg-white rounded flex items-center justify-center">
-                <span className="text-sm md:text-[25.2px]">T</span>
+                <img src={logo} alt="NurIt" />
               </div>
               <h3 className="text-base md:text-xl text-grayHead font-bold leading-6">
-                TailAdmin Docs
+                NurAdmin Docs
               </h3>
             </Link>
           </div>
@@ -60,14 +72,13 @@ const Navbar = () => {
             {openFilterModal && <Modal />}
           </div>
         </div>
-         
-         
+
         <div>
           {/* Overlay to cover the remaining part of the screen */}
           {showSidebar && (
             <div
               className="fixed z-40 inset-0 bg-black opacity-50"
-              onClick={() => setShowSidebar(false)} 
+              onClick={() => setShowSidebar(false)}
             ></div>
           )}
           {/* Sidebar */}

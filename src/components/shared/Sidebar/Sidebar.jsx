@@ -10,23 +10,15 @@ const Sidebar = () => {
 
   const toggleMenu = (index) => {
     setOpenMenuIndex((prevIndex) => (prevIndex === index ? null : index));
-    scrollToTop(); // Scroll to top when any menu item is clicked
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
   };
 
   return (
-    <div className="">
+    <div>
       <div className="relative">
         <div className="w-[293px] h-[470px]  hidden md:block overflow-y-auto">
           <div className="ml-6 py-4  fixed  md:h-[360px] xl1:h-[380px] 2xl:h-[470px] overflow-y-auto">
             {menus.map((menu, index) => (
-              <div key={index} className="">
+              <div key={menu.id}>
                 <Link
                   onClick={() => toggleMenu(index)}
                   to={menu.link}
@@ -40,7 +32,8 @@ const Sidebar = () => {
                     <span>{menu.emoji}</span>
                     <div className="w-full flex items-center justify-between">
                       <span>{menu.label}</span>
-                      <span>{menu.re_icon && <menu.re_icon />}</span> {/* Render the icon if it exists */}
+                      <span>{menu.re_icon && <menu.re_icon />}</span>{" "}
+                      {/* Render the icon if it exists */}
                     </div>
                   </div>
                   {menu.submenus && (
@@ -68,7 +61,6 @@ const Sidebar = () => {
                                   ? "text-blueActive bg-activeBg font-bold"
                                   : "text-grayMenu hover:bg-hoverBg duration-200 "
                               }`}
-                              onClick={scrollToTop} // Scroll to top when any submenu item is clicked
                             >
                               <span> {submenu.img}</span>
                               <div className="w-full flex items-center justify-between">
@@ -85,8 +77,7 @@ const Sidebar = () => {
             ))}
           </div>
         </div>
-        
-       
+
         {fixedPart.map((item) => (
           <Link
             key={item.id}
@@ -101,7 +92,6 @@ const Sidebar = () => {
             </div>
           </Link>
         ))}
-        
       </div>
     </div>
   );
