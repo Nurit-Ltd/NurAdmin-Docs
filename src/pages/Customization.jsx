@@ -31,44 +31,50 @@ const Customization = () => {
   }, []);
   return (
     <>
-      <TitleHeading
-        emoji="💅"
-        title="Customization"
-        description="In this part of the documentation, we are going to show you how you can customize the tailwind.config.js file.
+      <div className="flex">
+        <div>
+          <TitleHeading
+            emoji="💅"
+            title="Customization"
+            description="In this part of the documentation, we are going to show you how you can customize the tailwind.config.js file.
           "
-      />
-      <div className="w-auto lg:w-[723px] xl:w-[979px] xl1:w-[919px] 2xl:w-[1015px] 3xl:w-[1079px] 4xl:w-[1200px] relative">
-        <div className="container_fluid">
-          <div className="pt-9 text-headingText leading-6">
-            <p>
-              You can add your personalized styling by customizing the config
-              file. You can customize things like <span className="font-bold">Colors</span>, <span className="font-bold">Screens</span>, <span className="font-bold">Spacing</span>, and
-              many more.
-            </p>
-          </div>
-          <section id="section1">
-            <Color />
-          </section>
-          <section id="section2">
-            <DarkMode />
-          </section>
-          <section id="section3">
-            <Spacing />
-          </section>
-          <section id="section4">
-             <Screen />
-          </section>
+          />
+          <div className="w-auto lg:w-[723px] xl:w-[979px] xl1:w-[919px] 2xl:w-[1015px] 3xl:w-[1079px] 4xl:w-[1200px] relative">
+            <div className="container_fluid">
+              <div className="pt-9 text-headingText leading-6">
+                <p>
+                  You can add your personalized styling by customizing the
+                  config file. You can customize things like{" "}
+                  <span className="font-bold">Colors</span>,{" "}
+                  <span className="font-bold">Screens</span>,{" "}
+                  <span className="font-bold">Spacing</span>, and many more.
+                </p>
+              </div>
+              <section id="section1">
+                <Color />
+              </section>
+              <section id="section2">
+                <DarkMode />
+              </section>
+              <section id="section3">
+                <Spacing />
+              </section>
+              <section id="section4">
+                <Screen />
+              </section>
 
-          <div className="pb-10">
-            <FooterAllPage
-              title1="Vue.js Components"
-              title2="Credits and Resources"
-              link1="/components/vue-components"
-              link2="/credit-resources"
-            />
+              <div className="pb-10">
+                <FooterAllPage
+                  title1="Vue.js Components"
+                  title2="Credits and Resources"
+                  link1="/components/vue-components"
+                  link2="/credit-resources"
+                />
+              </div>
+            </div>
           </div>
         </div>
-        <nav className="hidden xl1:block fixed top-[105px] right-0 p-4 w-[220px] h-[150px]">
+        <nav className="hidden xl1:block sticky top-[105px] right-0 p-4 h-[150px]">
           <ul className="">
             <h4 className="px-6 mb-[6px] uppercase font-bold text-grayPrimary text-xs leading-[18px] tracking-[1.2px]">
               On this page
