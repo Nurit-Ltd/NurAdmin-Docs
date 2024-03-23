@@ -16,11 +16,13 @@ import Home from "../pages/Home";
 import Installation from "../pages/Installation";
 import UpdateLog from "../pages/UpdateLog";
 import UseFullLinks from "../pages/UseFullLinks";
+import NotFound from "../pages/NotFound";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
+    errorElement: <NotFound />,
     children: [
       {
         path: "/",
