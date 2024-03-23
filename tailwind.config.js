@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       screens: {
-        'xl1': '1440px',
-        '3xl':'1600px',
-        '4xl': '1920px'
+        xl1: "1440px",
+        "3xl": "1600px",
+        "4xl": "1920px",
       },
       colors: {
         grayHead: "#3B454E",
@@ -15,28 +15,28 @@ export default {
         graySm: "#8899a8",
         headingText: "#262930",
         grayPrimary: "#656973",
-        redText:"#D33D3D",
+        redText: "#D33D3D",
         blueIcon: "#307f98",
         bgBluer: "#f5f7f9",
-        textPerpel:"#8250df",
+        textPerpel: "#8250df",
         bgPink: "#ffe4e3",
         activeBar: "#346ddbd9",
         grayXm: "#8899a8",
-        grayFix:"#eceff1",
+        grayFix: "#eceff1",
         activeBg: "#85a3e01a",
         hoverBg: "#f7f7f7",
-        blueSearch: "#4EAAC8"
+        blueSearch: "#4EAAC8",
       },
       fontSize: {
         heading1: "40px",
-        heading3: "1.17em"
+        heading3: "1.17em",
       },
-      padding:{
-        25: "100px"
+      padding: {
+        25: "100px",
       },
-      margin:{
-        25: "100px"
-      }
+      margin: {
+        25: "100px",
+      },
     },
   },
   plugins: [],

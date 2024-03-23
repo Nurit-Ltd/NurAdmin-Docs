@@ -12,7 +12,6 @@ const HtmlComponent = () => {
     const handleScroll = () => {
       const sections = document.querySelectorAll("section");
       let currentActive = null;
-
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
@@ -53,7 +52,6 @@ const HtmlComponent = () => {
               <section id="section3">
                 <TodoList />
               </section>
-
               <div className="pb-10">
                 <FooterAllPage
                   title1="Components"
