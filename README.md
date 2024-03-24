@@ -1,8 +1,42 @@
-# React + Vite
+# NurAdmin Docs
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+😊 NurAdmin Docs is a dynamic and inclusive documentation platform dedicated to empowering coders of all levels. It offers a vast repository of coding knowledge spanning languages, frameworks, and tools, fostering a rich learning environment. Embracing the ethos of open-source collaboration, it welcomes user contributions, ensuring that the community continually enriches and refines the content. With its intuitive interface and comprehensive search functionality, NurAdmin Docs endeavors to redefine the coding learning experience, making it accessible, engaging, and efficient for every user. 🚀
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Client:** React, Redux, TailwindCSS
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/Nurit-Ltd/NurAdmin-Docs.git
+```
+
+Go to the project directory
+
+```bash
+  cd NurAdmin-Docs
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
+## Author
+
+- [@Nurit](https://github.com/nursoftwarebd)
+
+## Developed By
+
+- [@devwithfarshi](https://github.com/devwithfarshi)
+- [@SymuNadeeM](https://github.com/SymuNadeeM)

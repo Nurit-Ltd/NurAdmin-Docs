@@ -35,7 +35,9 @@ const TitleHeading = ({ emoji, title, description }) => {
           <div className="">
             <div className="flex items-center justify-between pr-5 relative">
               <div className="flex items-center">
-                <span className="absolute hidden md:block left-[-30px] lg:left-[-40px] text-xl">{emoji}</span>
+                <span className="absolute hidden md:block left-[-30px] lg:left-[-40px] text-xl">
+                  {emoji}
+                </span>
                 <h2 className="text-[32px] lg:text-heading1 text-headingText font-bold leading-[48px] flex items-center">
                   <span className="text-xl pr-2 md:hidden">{emoji}</span>
                   {title}
@@ -53,13 +55,13 @@ const TitleHeading = ({ emoji, title, description }) => {
                 </div>
                 {showModal && (
                   <div className="modal bg-white shadow-md w-[244px] h-[92px] border rounded absolute top-[60px] xl1:left-0 right-0  py-2 z-[999]">
-                    <div className="h-[38px] flex items-center mx-2 py-1 hover:bg-gray-100">
+                    <div className="h-[38px] flex items-center mx-2 py-1 hover:bg-gray-100  cursor-pointer">
                       <div className="pr-3">
                         <AiOutlineLink className="w-[34px] h-[18px] text-right text-blueIcon" />
                       </div>
                       <p className="font-medium text-grayHead">Copy link</p>
                     </div>
-                    <div className="h-[38px] flex items-center mx-2 py-1 hover:bg-gray-100">
+                    <div className="h-[38px] flex items-center mx-2 py-1 hover:bg-gray-100  cursor-pointer">
                       <div className="pr-3">
                         <BsGithub className="w-[34px] h-[18px] text-blueIcon" />
                       </div>

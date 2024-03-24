@@ -80,7 +80,7 @@ export const menus = [
     id: 8,
     emoji: "🎯",
     label: "Back to Main Site",
-    link: "https://NurAdmin.com/",
+    link: "https://nurit.io/",
     re_icon: FaUpRightFromSquare,
   },
 

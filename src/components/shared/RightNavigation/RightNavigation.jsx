@@ -7,7 +7,6 @@ const RightNavigation = ({ array }) => {
     const handleScroll = () => {
       const sections = document.querySelectorAll("section");
       let currentActive = null;
-
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
