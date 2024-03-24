@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { BsCopy } from 'react-icons/bs';
+import { useState } from "react";
+import { BsCopy } from "react-icons/bs";
 
 const CopyText = ({ textToCopy }) => {
   const [showModal, setShowModal] = useState(false);
@@ -8,19 +8,20 @@ const CopyText = ({ textToCopy }) => {
     navigator.clipboard
       .writeText(text)
       .then(() => {
-        console.log('Text copied to clipboard');
         setShowModal(true);
-        setTimeout(() => setShowModal(false), 2000); 
+        setTimeout(() => setShowModal(false), 2000);
       })
       .catch((error) => {
-        console.error('Error copying text: ', error);
+        console.error("Error copying text: ", error);
       });
   };
 
   return (
     <div className="">
       <div
-        className={`relative cursor-pointer rounded w-[25px] h-[25px] p-1 flex items-center justify-center  ${showModal ? "bg-transparent border-none" : "bg-white border "}`}
+        className={`relative cursor-pointer rounded w-[25px] h-[25px] p-1 flex items-center justify-center  ${
+          showModal ? "bg-transparent border-none" : "bg-white border "
+        }`}
         onClick={() => copyToClipboard(textToCopy)}
       >
         {!showModal ? (
@@ -44,10 +45,10 @@ const CopyText = ({ textToCopy }) => {
           </div>
         )}
         {showModal && (
-          <div className='absolute top-[-2px] right-[30px] w-[60px] h-[28px] bg-black text-white text-xs flex items-center justify-center rounded-md'>
-            <div className=''>
+          <div className="absolute top-[-2px] right-[30px] w-[60px] h-[28px] bg-black text-white text-xs flex items-center justify-center rounded-md">
+            <div className="">
               <span>Copied!</span>
-              <div className=' absolute right-[-3px] top-[9px] w-[10px] h-[10px] bg-black rotate-45 '></div>
+              <div className=" absolute right-[-3px] top-[9px] w-[10px] h-[10px] bg-black rotate-45 "></div>
             </div>
           </div>
         )}

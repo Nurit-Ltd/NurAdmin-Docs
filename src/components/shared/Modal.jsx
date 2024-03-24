@@ -37,7 +37,6 @@ const Modal = () => {
       >
         <div className="w-full h-[52px] px-6 flex items-center">
           <IoSearchOutline size={21} className="text-blueSearch mt-1" />
-          {/* FIXME: Nothing can be written in input filed */}
           <input
             type="text"
             className="p-4 mt-1 w-full outline-none overflow-hidden placeholder:text-sm placeholder:text-grayPrimary placeholder:font-medium"
