@@ -33,7 +33,11 @@ const Navbar = () => {
               className="md:hidden"
             />
 
-            <Link to={"/"} className="pl-4 pr-6 flex items-center gap-4">
+            <Link
+              to={"/"}
+              className="pl-4 pr-6 flex items-center gap-4"
+              data-aos="fade-right"
+            >
               <div className="w-6 h-6 md:w-9 md:h-9 border bg-white rounded flex items-center justify-center">
                 <img src={logo} alt="NurIt" />
               </div>
@@ -44,6 +48,7 @@ const Navbar = () => {
           </div>
           {/* small screen search */}
           <div
+            data-aos="fade-left"
             className="pr-2 md:hidden"
             onClick={() => setOpenFilterModal(!openFilterModal)}
           >
@@ -52,6 +57,7 @@ const Navbar = () => {
           </div>
           {/* large screen */}
           <div
+            data-aos="fade-left"
             onClick={() => setOpenFilterModal(!openFilterModal)}
             className="hidden md:block w-[233px] h-9  pl-6 pr-2 cursor-pointer"
           >

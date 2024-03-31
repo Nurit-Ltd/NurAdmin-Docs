@@ -13,7 +13,7 @@ const HomeFooter = () => {
   };
   return (
     <div>
-      <div className="pt-6">
+      <div className="pt-6" data-aos="fade-right">
         <Link
           to={"/installation"}
           className="w-full border p-4 flex items-center justify-between text-grayPrimary hover:text-blueActive focus:text-blueActive footer_bar duration-200"

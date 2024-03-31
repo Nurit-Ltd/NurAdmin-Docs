@@ -17,16 +17,16 @@ const Installation = () => {
           description="This part of the documentation will show you how you can install and configure NurAdmin templates. Both Tailwind + AlpineJS and Tailwind + React."
         />
         <div>
-          <section id="section1">
+          <section id="section1" data-aos="fade-up">
             <HtmlAdmin />
           </section>
-          <section id="section2">
+          <section id="section2" data-aos="fade-up">
             <ReactAdmin />
           </section>
-          <section id="section3">
+          <section id="section3" data-aos="fade-up">
             <NextJsAdmin />
           </section>
-          <section id="section4">
+          <section id="section4" data-aos="fade-up">
             <VueJsAdmin />
           </section>
           <div className="container_fluid pb-10">

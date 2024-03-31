@@ -44,13 +44,13 @@ const NextComponents = () => {
                   Here are a few examples of the components:
                 </h5>
               </div>
-              <section id="section1">
+              <section id="section1" data-aos="fade-up">
                 <NextBreadCum />
               </section>
-              <section id="section2">
+              <section id="section2" data-aos="fade-up">
                 <NextArts />
               </section>
-              <section id="section3">
+              <section id="section3" data-aos="fade-up">
                 <NextAccordion />
               </section>
 

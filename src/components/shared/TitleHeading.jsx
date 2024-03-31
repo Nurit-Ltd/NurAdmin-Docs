@@ -34,7 +34,7 @@ const TitleHeading = ({ emoji, title, description }) => {
         <div className="pt-10">
           <div className="">
             <div className="flex items-center justify-between pr-5 relative">
-              <div className="flex items-center">
+              <div className="flex items-center" data-aos="fade-right">
                 <span className="absolute hidden md:block left-[-30px] lg:left-[-40px] text-xl">
                   {emoji}
                 </span>
@@ -74,7 +74,9 @@ const TitleHeading = ({ emoji, title, description }) => {
               </div>
             </div>
           </div>
-          <p className="pt-4 text-grayPrimary">{description}</p>
+          <p className="pt-4 text-grayPrimary" data-aos="fade-left">
+            {description}
+          </p>
         </div>
       </div>
     </div>

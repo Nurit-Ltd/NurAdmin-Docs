@@ -17,6 +17,7 @@ const FooterAllPage = ({ title1, title2, link1, link2 }) => {
         <Link
           to={link1}
           className="w-full xl:w-1/2 border p-4 flex items-center justify-between text-grayPrimary hover:text-blueActive focus:text-blueActive footer_bar duration-200"
+          data-aos="fade-up"
         >
           <div>
             <GoArrowLeft className="w-6 h-6" />
@@ -30,6 +31,7 @@ const FooterAllPage = ({ title1, title2, link1, link2 }) => {
         <Link
           to={link2}
           className="w-full xl:w-1/2 border p-4 flex items-center justify-between text-grayPrimary hover:text-blueActive focus:text-blueActive footer_bar duration-200"
+          data-aos="fade-up"
         >
           <div>
             <p className="text-xs text-grayPrimary leading-[18px]">Next</p>
@@ -40,7 +42,10 @@ const FooterAllPage = ({ title1, title2, link1, link2 }) => {
           </div>
         </Link>
       </div>
-      <div className="mt-6 pt-6 border-t  flex flex-col xl:flex-row items-center xl:items-center justify-center xl:justify-between ">
+      <div
+        data-aos="fade-up"
+        className="mt-6 pt-6 border-t  flex flex-col xl:flex-row items-center xl:items-center justify-center xl:justify-between "
+      >
         <div className="text-sm text-grayPrimary font-normal leading-[22px]">
           Last modified 24d ago
         </div>

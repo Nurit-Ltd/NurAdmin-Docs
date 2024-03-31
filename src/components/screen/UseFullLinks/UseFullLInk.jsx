@@ -28,7 +28,7 @@ const UseFullLInk = () => {
         </div>
         <div>
           {useFullLinkData.slice(1, 3).map((data) => (
-            <div className="py-4" key={data.id}>
+            <div className="py-4" key={data.id} data-aos="zoom-in">
               <Link
                 to={data.link}
                 target="blank"
@@ -53,7 +53,7 @@ const UseFullLInk = () => {
         </div>
         <div>
           {useFullLinkData.slice(3).map((data) => (
-            <div className="py-4" key={data.id}>
+            <div className="py-4" key={data.id} data-aos="zoom-in">
               <Link
                 to={data.link}
                 target="blank"

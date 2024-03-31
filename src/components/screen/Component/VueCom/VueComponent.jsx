@@ -46,13 +46,13 @@ import BreadcrumbDefault from '@/components/Breadcrumbs/BreadcrumbDefault.vue'
                   Here are a few examples of the components:
                 </h5>
               </div>
-              <section id="section1">
+              <section id="section1" data-aos="fade-up">
                 <VueBreadCum />
               </section>
-              <section id="section2">
+              <section id="section2" data-aos="fade-up">
                 <VueArts />
               </section>
-              <section id="section3">
+              <section id="section3" data-aos="fade-up">
                 <VueAccordion />
               </section>
 
