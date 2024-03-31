@@ -13,7 +13,7 @@ const UpdateReact = () => {
         <div className="container_fluid">
           <div className="pt-12 pb-20">
             {updateReact.slice(0, 1).map((update) => (
-              <div key={update.id}>
+              <div key={update.id} data-aos="fade-up">
                 <h2 className="text-xl text-headingText font-bold leading-6">
                   Version {update.version} - [{update.releaseDate[0]},
                   {update.releaseDate[1]}]

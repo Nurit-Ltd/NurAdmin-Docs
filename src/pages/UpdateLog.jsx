@@ -13,7 +13,7 @@ const UpdateLog = () => {
       />
       <div className="w-auto lg:w-[723px] xl:w-[979px] xl1:w-[919px] 2xl:w-[1015px] 3xl:w-[1079px] 4xl:w-[1200px]">
         <div className="container_fluid">
-          <div className="mt-20 pb-25 flex flex-wrap gap-4">
+          <div className="mt-20 pb-25 flex flex-wrap gap-4" data-aos="zoom-in">
             {updateAndLog.map((language) => (
               <div
                 key={language.id}

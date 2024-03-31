@@ -23,13 +23,13 @@ const HtmlComponent = () => {
                 Here are a few examples of the components:
               </h5>
 
-              <section id="section1">
+              <section id="section1" data-aos="fade-up">
                 <FormInputField />
               </section>
-              <section id="section2">
+              <section id="section2" data-aos="fade-up">
                 <AnalyticsChart />
               </section>
-              <section id="section3">
+              <section id="section3" data-aos="fade-up">
                 <TodoList />
               </section>
               <div className="pb-10">

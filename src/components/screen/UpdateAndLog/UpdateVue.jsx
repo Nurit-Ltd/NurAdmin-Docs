@@ -10,7 +10,7 @@ const UpdateVue = () => {
         <div className="container_fluid">
           <div className="pt-12 pb-20">
             {updateVue.map((update) => (
-              <div key={update.id}>
+              <div key={update.id} data-aos="fade-up">
                 <h3 className=" py-6 text-headingText font-bold leading-6">
                   {update.releaseDate}
                 </h3>
